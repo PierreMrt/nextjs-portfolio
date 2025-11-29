@@ -31,7 +31,7 @@ export default function ProfileCard() {
           href="https://github.com/PierreMrt"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-teal-500 transition-colors"
+          className="text-gray-600 hover:text-lime-500 transition-colors"
           aria-label="GitHub"
         >
           <Github className="w-5 h-5" />
@@ -40,14 +40,14 @@ export default function ProfileCard() {
           href="https://www.linkedin.com/in/pierre-merlet-553028a9/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-teal-500 transition-colors"
+          className="text-gray-600 hover:text-lime-500 transition-colors"
           aria-label="LinkedIn"
         >
           <Linkedin className="w-5 h-5" />
         </a>
         <a
           href="mailto:pierre.merlet@proton.me"
-          className="text-gray-600 hover:text-teal-500 transition-colors"
+          className="text-gray-600 hover:text-lime-500 transition-colors"
           aria-label="Email"
         >
           <Mail className="w-5 h-5" />

@@ -5,7 +5,7 @@ export default function ProjectsSection() {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6">
-        <span className="text-teal-500">My</span>{" "}
+        <span className="text-lime-600">My</span>{" "}
         <span className="text-gray-900">Projects</span>
       </h2>
 
@@ -24,7 +24,7 @@ export default function ProjectsSection() {
               <ul className="mb-4 space-y-1">
                 {project.highlights.map((highlight, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="text-teal-500 mt-1">•</span>
+                    <span className="text-lime-500 mt-1">•</span>
                     <span>{highlight}</span>
                   </li>
                 ))}
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
               {project.technologies.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="px-2 py-1 text-xs bg-teal-50 text-teal-700 rounded font-medium"
+                  className="px-2 py-1 text-xs bg-lime-50 text-lime-700 rounded font-medium"
                 >
                   {tech}
                 </span>

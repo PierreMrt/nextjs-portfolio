@@ -24,7 +24,7 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
           onClick={() => onSectionChange(id)}
           className={`group relative p-3 rounded-lg transition-all ${
             activeSection === id
-              ? 'bg-teal-500 text-white'
+              ? 'bg-lime-500 text-white'
               : 'text-gray-600 hover:bg-gray-100'
           }`}
           title={label}
