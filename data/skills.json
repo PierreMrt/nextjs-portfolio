@@ -5,24 +5,24 @@
       "skills": ["Python", "SQL", "Pyspark", "VBA"]
     },
     {
+      "category": "Datascience",
+      "skills": ["Scikit-learn", "TensorFlow", "Model Training", "Sentiment Analysis", "NLP", "Neural Networks"]
+    },
+    {
       "category": "Data Analysis",
       "skills": ["Pandas", "NumPy", "Statistical Analysis"]
     },
     {
       "category": "Data Visualization",
-      "skills": ["Tableau", "Power BI", "Matplotlib", "Seaborn", "Plotly"]
+      "skills": ["Tableau", "Matplotlib", "Seaborn", "Plotly"]
     },
     {
       "category": "Databases",
       "skills": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"]
     },
     {
-      "category": "Machine Learning",
-      "skills": ["Scikit-learn", "TensorFlow", "Model Training", "Sentiment Analysis", "NLP"]
-    },
-    {
       "category": "Tools & Technologies",
-      "skills": ["Git", "Docker", "Jupyter", "Excel", "Django"]
+      "skills": ["Git", "Docker", "Jupyter", "Excel", "Alteryx"]
     }
   ],
   "soft": [

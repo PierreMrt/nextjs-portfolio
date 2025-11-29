@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "European Passenger Cars CO2 Analysis",
+    "description": "A comprehensive data science project analyzing and predicting CO₂ emissions from European passenger cars using machine learning techniques and interactive visualizations. Built with Python, Scikit-learn, and Streamlit.",
+    "technologies": ["Python", "Machine Learning", "Streamlit", "Pandas", "Scikit-learn", "SHAP"],
+    "github": "https://github.com/PierreMrt/european_passenger_cars_co2",
+    "featured": true,
+    "highlights": [
+      "Random Forest model for CO₂ emission predictions",
+      "Interactive Streamlit web application",
+      "SHAP analysis for model explainability",
+      "Automated data processing pipeline"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Neural Evolution Ecosystem Simulation",
+    "description": "A real-time evolutionary simulation where creatures with neural network brains evolve through natural selection, mutation, and survival in a dynamic ecosystem. Features NEAT-inspired evolution and complex predator-prey dynamics.",
+    "technologies": ["Python", "Neural Networks", "Pygame", "Evolution", "AI", "Simulation"],
+    "github": "https://github.com/PierreMrt/evolution_sim",
+    "featured": true,
+    "highlights": [
+      "Dynamic neural networks controlling creature behavior",
+      "NEAT-inspired evolutionary algorithm",
+      "Real-time ecosystem visualization",
+      "Species formation through genetic clustering"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Sentiment Analysis on Amazon Reviews",
+    "description": "Machine learning project for classifying Amazon product reviews as positive or negative. Trained multiple models including Logistic Regression, SVM, and Neural Networks, achieving 92% accuracy.",
+    "technologies": ["Python", "Machine Learning", "NLP", "Scikit-learn", "NLTK"],
+    "github": "https://github.com/PierreMrt/amazon_sentiment_analysis",
+    "featured": true,
+    "highlights": [
+      "92% classification accuracy",
+      "TF-IDF feature extraction",
+      "Multiple model comparison",
+      "Text preprocessing and tokenization"
+    ]
+  }
+]

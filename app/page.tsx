@@ -1,19 +1,18 @@
-import Hero from '@/components/sections/Hero'
-import About from '@/components/sections/About'
-import ExperiencePreview from '@/components/sections/ExperiencePreview'
-import ProjectsPreview from '@/components/sections/ProjectsPreview'
-import ContactCTA from '@/components/sections/ContactCTA'
+'use client'
 
-export const revalidate = 3600 // Revalidate every hour
+import { useState } from 'react'
+import Sidebar from '@/components/layout/Sidebar'
+import ProfileCard from '@/components/layout/ProfileCard'
+import ContentPanel from '@/components/layout/ContentPanel'
 
-export default async function Home() {
+export default function Home() {
+  const [activeSection, setActiveSection] = useState('about')
+
   return (
-    <>
-      <Hero />
-      <About />
-      <ExperiencePreview />
-      <ProjectsPreview />
-      <ContactCTA />
-    </>
+    <div className="portfolio-container">
+      <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
+      <ProfileCard />
+      <ContentPanel activeSection={activeSection} />
+    </div>
   )
 }
