@@ -1,18 +1,83 @@
 [
   {
     "id": "1",
-    "title": "Data Analyst",
+    "title": "Data Analyst & Data Fraud Referent",
     "company": "Caisse des Dépôts",
     "location": "Angers, France",
-    "startDate": "2021",
+    "startDate": "December 2021",
     "endDate": "Present",
-    "description": "Transforming raw data into actionable insights for strategic decision-making. Managing database systems and developing data visualization dashboards.",
+    "description": "Transforming raw data into actionable insights for strategic decision-making. Specialized in fraud detection and data analysis to support management decisions through comprehensive dashboards and reporting.",
     "responsibilities": [
-      "Developed automated data pipelines using Python and SQL",
-      "Created interactive dashboards for management reporting",
+      "Developed automated data pipelines using Python and SQL for fraud detection",
+      "Created interactive dashboards for management reporting and fraud monitoring",
       "Performed statistical analysis and predictive modeling",
-      "Collaborated with cross-functional teams to identify data-driven solutions"
+      "Collaborated with cross-functional teams to identify data-driven solutions",
+      "Led fraud detection initiatives and implemented risk assessment frameworks"
     ],
-    "technologies": ["Python", "SQL", "Tableau", "Power BI", "Excel"]
+    "technologies": ["Python", "SQL", "Tableau", "Power BI", "Excel", "Data Analysis", "Fraud Detection"]
+  },
+  {
+    "id": "2",
+    "title": "Business Intelligence Analyst",
+    "company": "IVECO",
+    "location": "France",
+    "startDate": "October 2019",
+    "endDate": "2021",
+    "description": "Focused on data collection and standardization from ERP systems, building business intelligence solutions to support operational decision-making.",
+    "responsibilities": [
+      "Collected and standardized data from multiple ERP systems",
+      "Developed BI dashboards and reporting solutions",
+      "Analyzed business processes and identified optimization opportunities",
+      "Collaborated with stakeholders to define KPIs and metrics"
+    ],
+    "technologies": ["SQL", "Business Intelligence", "ERP Systems", "Data Visualization"]
+  },
+  {
+    "id": "3",
+    "title": "Assistant, Commercial & Supply Chain Consulting",
+    "company": "Mondi Group",
+    "location": "France",
+    "startDate": "2018",
+    "endDate": "2019",
+    "description": "Improved business processes through automation and consulting on supply chain analytics and optimization.",
+    "responsibilities": [
+      "Automated business processes and workflows",
+      "Provided consulting on supply chain optimization",
+      "Analyzed commercial operations and identified improvement areas",
+      "Supported decision-making through data analysis"
+    ],
+    "technologies": ["Process Automation", "Supply Chain Analytics", "Excel", "Data Analysis"]
+  },
+  {
+    "id": "4",
+    "title": "Project Management",
+    "company": "AGC Automotive Europe",
+    "location": "France",
+    "startDate": "2017",
+    "endDate": "2018",
+    "description": "Managed cross-functional projects in automotive supply chain operations.",
+    "responsibilities": [
+      "Coordinated cross-functional project teams",
+      "Managed automotive supply chain projects",
+      "Ensured project delivery within scope and timeline",
+      "Facilitated communication between stakeholders"
+    ],
+    "technologies": ["Project Management", "Supply Chain", "Stakeholder Management"]
+  },
+  {
+    "id": "5",
+    "title": "Purchasing",
+    "company": "ENGIE Axima",
+    "location": "France",
+    "startDate": "2016",
+    "endDate": "2017",
+    "description": "Supported strategic sourcing and procurement process optimization.",
+    "responsibilities": [
+      "Managed strategic sourcing activities",
+      "Optimized procurement processes",
+      "Negotiated with suppliers",
+      "Analyzed purchasing data and costs"
+    ],
+    "technologies": ["Procurement", "Supplier Management", "Cost Analysis"]
   }
 ]
