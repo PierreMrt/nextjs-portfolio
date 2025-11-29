@@ -15,11 +15,52 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  .animation-delay-5000 {
+    animation-delay: 5s;
+  }
+  
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
+  
+  .animation-delay-8000 {
+    animation-delay: 8s;
+  }
+  
+  .animation-delay-10000 {
+    animation-delay: 10s;
+  }
+  
+  .animation-delay-12000 {
+    animation-delay: 12s;
+  }
+  
+  .animation-delay-14000 {
+    animation-delay: 14s;
   }
 }
 
@@ -44,4 +85,5 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
+  z-index: 1;
 }
