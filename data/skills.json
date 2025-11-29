@@ -1,0 +1,35 @@
+{
+  "technical": [
+    {
+      "category": "Programming Languages",
+      "skills": ["Python", "SQL", "R", "JavaScript"]
+    },
+    {
+      "category": "Data Analysis",
+      "skills": ["Pandas", "NumPy", "Statistical Analysis", "A/B Testing"]
+    },
+    {
+      "category": "Data Visualization",
+      "skills": ["Tableau", "Power BI", "Matplotlib", "Seaborn", "Plotly"]
+    },
+    {
+      "category": "Databases",
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"]
+    },
+    {
+      "category": "Machine Learning",
+      "skills": ["Scikit-learn", "TensorFlow", "Model Training", "Sentiment Analysis"]
+    },
+    {
+      "category": "Tools & Technologies",
+      "skills": ["Git", "Docker", "Jupyter", "Excel", "Django"]
+    }
+  ],
+  "soft": [
+    "Problem Solving",
+    "Communication",
+    "Team Collaboration",
+    "Project Management",
+    "Analytical Thinking"
+  ]
+}

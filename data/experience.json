@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "title": "Data Analyst",
+    "company": "Caisse des Dépôts",
+    "location": "Angers, France",
+    "startDate": "2021",
+    "endDate": "Present",
+    "description": "Transforming raw data into actionable insights for strategic decision-making. Managing database systems and developing data visualization dashboards.",
+    "responsibilities": [
+      "Developed automated data pipelines using Python and SQL",
+      "Created interactive dashboards for management reporting",
+      "Performed statistical analysis and predictive modeling",
+      "Collaborated with cross-functional teams to identify data-driven solutions"
+    ],
+    "technologies": ["Python", "SQL", "Tableau", "Power BI", "Excel"]
+  }
+]
