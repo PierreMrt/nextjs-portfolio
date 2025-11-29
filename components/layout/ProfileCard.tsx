@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Globe } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 
 export default function ProfileCard() {
@@ -37,7 +37,7 @@ export default function ProfileCard() {
           <Github className="w-5 h-5" />
         </a>
         <a
-          href="https://linkedin.com/in/pierremerlet"
+          href="https://www.linkedin.com/in/pierre-merlet-553028a9/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-teal-500 transition-colors"
@@ -46,20 +46,11 @@ export default function ProfileCard() {
           <Linkedin className="w-5 h-5" />
         </a>
         <a
-          href="mailto:pierre.merlet@example.com"
+          href="mailto:pierre.merlet@proton.me"
           className="text-gray-600 hover:text-teal-500 transition-colors"
           aria-label="Email"
         >
           <Mail className="w-5 h-5" />
-        </a>
-        <a
-          href="https://pierremerlet.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 hover:text-teal-500 transition-colors"
-          aria-label="Website"
-        >
-          <Globe className="w-5 h-5" />
         </a>
       </div>
     </div>
