@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --text-color: #1a1a1a;
-  --bg-color: #ffffff;
-}
-
-body {
-  color: var(--text-color);
-  background: linear-gradient(135deg, #4DB8A8 0%, #6BCFBE 100%);
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
 @layer utilities {
   .text-balance {
