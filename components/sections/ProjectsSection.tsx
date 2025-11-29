@@ -1,17 +1,13 @@
 import projectsData from '@/data/projects.json'
-import { ExternalLink, Github } from 'lucide-react'
+import { Github } from 'lucide-react'
 
 export default function ProjectsSection() {
   return (
     <div>
-      <div className="flex items-center gap-3 mb-6">
-        <div className="p-2 bg-teal-100 rounded-lg">
-          <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-          </svg>
-        </div>
-        <h2 className="text-2xl font-bold text-gray-900">Projects</h2>
-      </div>
+      <h2 className="text-2xl font-bold mb-6">
+        <span className="text-teal-500">My</span>{" "}
+        <span className="text-gray-900">Projects</span>
+      </h2>
 
       <div className="space-y-6">
         {projectsData.map((project) => (
