@@ -5,15 +5,15 @@ export default function ExperienceSection() {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6">
-        <span className="text-teal-500">My</span>{" "}
+        <span className="text-lime-600">My</span>{" "}
         <span className="text-gray-900">Experience</span>
       </h2>
 
       <div className="space-y-6">
         {experienceData.map((exp) => (
-          <div key={exp.id} className="border-l-4 border-teal-500 pl-6 pb-6">
+          <div key={exp.id} className="border-l-4 border-lime-500 pl-6 pb-6">
             <div className="mb-3">
-              <span className="inline-block px-3 py-1 text-sm font-medium text-teal-700 bg-teal-50 rounded-full mb-2">
+              <span className="inline-block px-3 py-1 text-sm font-medium text-lime-700 bg-lime-50 rounded-full mb-2">
                 {exp.startDate} - {exp.endDate}
               </span>
               <h3 className="text-xl font-bold text-gray-900 mb-1">
@@ -30,7 +30,7 @@ export default function ExperienceSection() {
               <ul className="space-y-1 text-sm text-gray-600">
                 {exp.responsibilities.map((resp, idx) => (
                   <li key={idx} className="flex items-start gap-2">
-                    <span className="text-teal-500 mt-1">•</span>
+                    <span className="text-lime-500 mt-1">•</span>
                     <span>{resp}</span>
                   </li>
                 ))}

@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary-color: #0066CC;
-  --secondary-color: #333333;
-  --text-color: #1a1a1a;
-  --bg-color: #ffffff;
-}
-
-body {
-  color: var(--text-color);
-  background: linear-gradient(135deg, #4DB8A8 0%, #6BCFBE 100%);
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
 @layer utilities {
   .text-balance {
@@ -62,14 +47,6 @@ body {
   .animation-delay-14000 {
     animation-delay: 14s;
   }
-}
-
-.section-padding {
-  @apply py-16 px-4 md:px-8 lg:px-16;
-}
-
-.container-custom {
-  @apply max-w-7xl mx-auto;
 }
 
 /* Main centered container */
