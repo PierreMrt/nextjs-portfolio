@@ -6,8 +6,9 @@ export default function AboutSection() {
   return (
     <div className="space-y-8">
       <div>
-        <h2 className="text-3xl font-bold mb-4 text-gray-900">
-          About Me
+        <h2 className="text-3xl font-bold mb-4">
+          <span className="text-teal-500">About</span>{" "}
+          <span className="text-gray-900">Me</span>
         </h2>
         <div className="text-gray-700 space-y-4">
           <p className="text-lg leading-relaxed">
@@ -20,7 +21,10 @@ export default function AboutSection() {
       
       {/* Skills Section */}
       <div>
-        <h3 className="text-2xl font-bold mb-6 text-gray-900">Skills & Expertise</h3>
+        <h3 className="text-2xl font-bold mb-6">
+          <span className="text-teal-500">Skills</span>{" "}
+          <span className="text-gray-900">& Expertise</span>
+        </h3>
         
         <div className="space-y-8">
           {/* Technical Skills */}
