@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getProjectBySlug, getAllProjects } from '@/lib/content'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react'
 
 export const revalidate = 3600
@@ -88,6 +89,18 @@ export default async function ProjectPage({ params }: Props) {
             </a>
           )}
         </div>
+
+        {project.image && (
+          <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden bg-gray-100">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
 
         <div className="prose prose-lg max-w-none">
           <MDXRemote source={project.content} />
