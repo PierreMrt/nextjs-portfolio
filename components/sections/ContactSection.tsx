@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Globe, MapPin } from 'lucide-react'
+import { Mail, Linkedin, Github, MapPin } from 'lucide-react'
 
 export default function ContactSection() {
   return (
@@ -21,7 +21,7 @@ export default function ContactSection() {
 
         <div className="space-y-4">
           <a
-            href="mailto:pierre.merlet@example.com"
+            href="mailto:pierre.merlet@proton.me"
             className="flex items-center gap-4 p-4 border border-gray-200 rounded-lg hover:border-teal-500 hover:bg-teal-50 transition-all group"
           >
             <div className="p-3 bg-gray-100 rounded-lg group-hover:bg-teal-100 transition-colors">
@@ -29,12 +29,12 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="font-medium text-gray-900">Email</p>
-              <p className="text-sm text-gray-600">pierre.merlet@example.com</p>
+              <p className="text-sm text-gray-600">pierre.merlet@proton.me</p>
             </div>
           </a>
 
           <a
-            href="https://linkedin.com/in/pierremerlet"
+            href="https://www.linkedin.com/in/pierre-merlet-553028a9/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-4 p-4 border border-gray-200 rounded-lg hover:border-teal-500 hover:bg-teal-50 transition-all group"
@@ -44,7 +44,7 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="font-medium text-gray-900">LinkedIn</p>
-              <p className="text-sm text-gray-600">linkedin.com/in/pierremerlet</p>
+              <p className="text-sm text-gray-600">linkedin.com/in/pierre-merlet-553028a9</p>
             </div>
           </a>
 
