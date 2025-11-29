@@ -35,7 +35,7 @@ export default function Footer() {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/in/pierre-merlet"
+                href="https://www.linkedin.com/in/pierre-merlet-553028a9/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition"
@@ -44,7 +44,7 @@ export default function Footer() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="mailto:merlet.pierre@outlook.com"
+                href="mailto:pierre.merlet@proton.me"
                 className="hover:text-primary transition"
                 aria-label="Email"
               >

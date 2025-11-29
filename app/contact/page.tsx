@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="section-padding container-custom">
       <h1 className="text-4xl font-bold mb-4">Contact Me</h1>
       <p className="text-gray-600 mb-12 text-lg">
-        Let's discuss how I can help with your data analysis needs
+        Get in touch with me
       </p>
 
       <div className="grid md:grid-cols-2 gap-12">
@@ -21,11 +21,11 @@ export default function ContactPage() {
           
           <div className="space-y-4 mb-8">
             <a
-              href="mailto:merlet.pierre@outlook.com"
+              href="mailto:pierre.merlet@proton.me"
               className="flex items-center gap-3 text-gray-700 hover:text-primary transition"
             >
               <Mail className="w-5 h-5" />
-              merlet.pierre@outlook.com
+              pierre.merlet@proton.me
             </a>
             
             <a
@@ -37,7 +37,7 @@ export default function ContactPage() {
             </a>
             
             <a
-              href="https://www.linkedin.com/in/pierre-merlet"
+              href="https://www.linkedin.com/in/pierre-merlet-553028a9/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-gray-700 hover:text-primary transition"
@@ -71,7 +71,7 @@ export default function ContactPage() {
             <ul className="space-y-2 text-gray-700">
               <li>🇫🇷 French - Mother tongue</li>
               <li>🇬🇧 English - Business Fluent</li>
-              <li>🇪🇸 Spanish - Business Fluent</li>
+              <li>🇮🇹 Italian - Business Fluent</li>
             </ul>
           </div>
         </div>

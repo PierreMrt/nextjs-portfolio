@@ -9,7 +9,7 @@ export default async function ExperiencePreview() {
     <section className="section-padding container-custom bg-gray-50">
       <h2 className="text-3xl font-bold mb-4">Experience</h2>
       <p className="text-gray-600 mb-12 text-lg">
-        Over 3 years of professional data analysis experience
+        Over 5 years of professional data analysis experience
       </p>
 
       <div className="space-y-8 mb-8">

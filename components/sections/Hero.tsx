@@ -12,7 +12,7 @@ export default function Hero() {
           Data Analyst
         </h2>
         <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
-          Tech-driven data analyst with <strong>3+ years of experience</strong> in transforming raw data into meaningful insights.
+          Tech-driven data analyst with <strong>5+ years of experience</strong> in transforming raw data into meaningful insights.
           In-depth knowledge of database management, programming languages such as Python and SQL, 
           and data visualization techniques to help management make the most informed decisions.
         </p>

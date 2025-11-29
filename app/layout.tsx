@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Pierre Merlet - Data Analyst',
-  description: 'Tech-driven data analyst with 3+ years of experience in transforming raw data into meaningful insights.',
+  description: 'Tech-driven data analyst with 5+ years of experience in transforming raw data into meaningful insights.',
   keywords: 'data analyst, Python, SQL, data visualization, business intelligence',
   authors: [{ name: 'Pierre Merlet' }],
   openGraph: {
