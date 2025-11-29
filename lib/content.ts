@@ -12,6 +12,7 @@ export interface Project {
   tags: string[]
   github?: string
   demo?: string
+  image?: string
   featured: boolean
   content: string
 }
@@ -56,6 +57,7 @@ export async function getAllProjects(): Promise<Project[]> {
         tags: data.tags || [],
         github: data.github,
         demo: data.demo,
+        image: data.image,
         featured: data.featured || false,
         content,
       }
@@ -77,6 +79,7 @@ export async function getProjectBySlug(slug: string): Promise<Project | null> {
       tags: data.tags || [],
       github: data.github,
       demo: data.demo,
+      image: data.image,
       featured: data.featured || false,
       content,
     }
