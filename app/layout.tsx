@@ -5,13 +5,13 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Pierre Merlet - Data Analyst',
-  description: 'Tech-driven data analyst with 5+ years of experience in transforming raw data into meaningful insights.',
-  keywords: 'data analyst, Python, SQL, data visualization, business intelligence',
+  title: 'Pierre Merlet - Data Scientist',
+  description: 'Tech-driven data scientist with 3+ years of experience in transforming raw data into meaningful insights.',
+  keywords: 'data scientist, Python, SQL, data visualization, machine learning, data science, IA',
   authors: [{ name: 'Pierre Merlet' }],
   openGraph: {
-    title: 'Pierre Merlet - Data Analyst',
-    description: 'Tech-driven data analyst portfolio',
+    title: 'Pierre Merlet - Data Scientist',
+    description: 'Tech-driven data scientist portfolio',
     url: 'https://www.pierre-merlet.com',
     siteName: 'Pierre Merlet Portfolio',
     locale: 'en_US',
