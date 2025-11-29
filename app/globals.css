@@ -79,10 +79,13 @@
   .portfolio-container {
     width: 100vw;
     height: 100vh;
+    height: 100dvh; /* Use dynamic viewport height for mobile browsers */
     border-radius: 0;
     top: 0;
     left: 0;
     transform: none;
     flex-direction: column;
+    /* Ensure proper scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
   }
 }

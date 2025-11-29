@@ -9,14 +9,14 @@ export default function ProfileCard() {
 
   return (
     <>
-      {/* Mobile Header (visible only on mobile) */}
-      <div className="md:hidden w-full bg-gray-50 border-b border-gray-200 p-4">
+      {/* Mobile Header (visible only on mobile) - flex-shrink-0 prevents it from being compressed */}
+      <div className="md:hidden w-full bg-gray-50 border-b border-gray-200 p-4 flex-shrink-0">
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-full flex items-center justify-between"
         >
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
               <Image
                 src="/images/profile.jpg"
                 alt="Pierre MERLET"
@@ -30,20 +30,20 @@ export default function ProfileCard() {
               <p className="text-sm text-gray-600">Data Scientist</p>
             </div>
           </div>
-          {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+          {isExpanded ? <ChevronUp className="w-5 h-5 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 flex-shrink-0" />}
         </button>
         
         {/* Expanded mobile content */}
         {isExpanded && (
           <div className="mt-4 pt-4 border-t border-gray-300">
             <div className="flex gap-4 items-center justify-center mb-4">
-              <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors">
+              <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors">
+              <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 hover:text-lime-500 transition-colors">
+              <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="Email">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -96,13 +96,13 @@ export default function ProfileCard() {
         </p>
 
         <div className="flex gap-4 items-center justify-center mb-8">
-          <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors">
+          <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors">
+          <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="LinkedIn">
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 hover:text-lime-500 transition-colors">
+          <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="Email">
             <Mail className="w-5 h-5" />
           </a>
         </div>
