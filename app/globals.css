@@ -72,10 +72,13 @@
 
 .sidebar-container {
   background: white;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  height: calc(100% - 40px);
+  height: auto;
   margin-top: 20px;
+  margin-right: -10px;
+  position: relative; 
+  z-index: 10; 
 }
 
 /* Profile and content wrapper */
@@ -96,22 +99,22 @@
 
 .profile-bg {
   position: absolute;
-  top: -30px;
-  left: -30px;
-  width: calc(100% + 60px);
-  height: calc(100% + 60px);
-  background: linear-gradient(135deg, rgba(186, 220, 88, 0.3) 40%, transparent 100%);
-  border-radius: 14px;
+  top: -35px;
+  left: -20px;
+  width: calc(100%);
+  height: calc(100%);
+  background-color: #66ba85;
+  border-radius: 5px;
   z-index: -1;
   pointer-events: none;
 }
 
 .profile-container {
-  background: #f9fafb;
-  border-radius: 12px;
+  background: white;
+  border-radius: 5px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  height: calc(100% + 60px);
-  margin-top: -30px;
+  height: calc(100% + 30px);
+  margin-top: -15px;
   position: relative;
   overflow: hidden;
 }
@@ -120,11 +123,13 @@
 .content-container {
   flex: 1;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0 5px 5px 0; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
   position: relative;
   z-index: 3;
-  overflow: hidden;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Tablet and mobile responsive adjustments */
@@ -142,7 +147,7 @@
   
   .profile-container,
   .content-container {
-    border-radius: 10px;
+    border-radius: 0 5px  5px 0;
   }
 }
 
@@ -197,5 +202,15 @@
     border-radius: 0;
     box-shadow: none;
     flex: 1;
+  }
+}
+
+@layer utilities {
+  .icon-fluid {
+    width: clamp(1.25rem, 2vh, 2rem);
+    height: clamp(1.25rem, 2vh, 2rem);
+  }
+  .gap-fluid {
+    gap: clamp(0.2rem, 1.5vh, 1.5rem);
   }
 }

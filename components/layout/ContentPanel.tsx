@@ -29,7 +29,7 @@ export default function ContentPanel({ activeSection }: ContentPanelProps) {
   }
 
   return (
-    <div className="flex-1 bg-white p-8 overflow-y-auto overscroll-contain md:p-8 max-md:p-6 max-md:pb-8">
+    <div className="p-8 md:p-8 max-md:p-6">
       <div className="max-md:pb-4">
         {renderSection()}
       </div>
