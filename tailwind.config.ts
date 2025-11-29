@@ -25,12 +25,12 @@ const config: Config = {
         },
       },
       animation: {
-        'float-up-1': 'floatUp 15s linear infinite',
-        'float-up-2': 'floatUp 18s linear infinite',
-        'float-up-3': 'floatUp 20s linear infinite',
-        'float-up-4': 'floatUp 16s linear infinite',
-        'float-up-5': 'floatUp 22s linear infinite',
-        'float-up-6': 'floatUp 17s linear infinite',
+        'float-up-1': 'floatUp 20s linear infinite',
+        'float-up-2': 'floatUp 23s linear infinite',
+        'float-up-3': 'floatUp 25s linear infinite',
+        'float-up-4': 'floatUp 21s linear infinite',
+        'float-up-5': 'floatUp 27s linear infinite',
+        'float-up-6': 'floatUp 22s linear infinite',
       },
       keyframes: {
         floatUp: {
