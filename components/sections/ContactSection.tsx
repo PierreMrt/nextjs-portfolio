@@ -3,14 +3,10 @@ import { Mail, Linkedin, Github, MapPin } from 'lucide-react'
 export default function ContactSection() {
   return (
     <div>
-      <div className="flex items-center gap-3 mb-6">
-        <div className="p-2 bg-teal-100 rounded-lg">
-          <svg className="w-6 h-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <h2 className="text-2xl font-bold text-gray-900">Contact</h2>
-      </div>
+      <h2 className="text-2xl font-bold mb-6">
+        <span className="text-teal-500">Contact</span>{" "}
+        <span className="text-gray-900">Me</span>
+      </h2>
 
       <div className="space-y-6">
         <div>
