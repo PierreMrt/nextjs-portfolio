@@ -25,21 +25,28 @@ const config: Config = {
         },
       },
       animation: {
-        blob: 'blob 7s infinite',
+        'float-up-1': 'floatUp 15s linear infinite',
+        'float-up-2': 'floatUp 18s linear infinite',
+        'float-up-3': 'floatUp 20s linear infinite',
+        'float-up-4': 'floatUp 16s linear infinite',
+        'float-up-5': 'floatUp 22s linear infinite',
+        'float-up-6': 'floatUp 17s linear infinite',
       },
       keyframes: {
-        blob: {
+        floatUp: {
           '0%': {
-            transform: 'translate(0px, 0px) scale(1)',
+            transform: 'translateY(0) rotate(0deg)',
+            opacity: '0',
           },
-          '33%': {
-            transform: 'translate(30px, -50px) scale(1.1)',
+          '10%': {
+            opacity: '1',
           },
-          '66%': {
-            transform: 'translate(-20px, 20px) scale(0.9)',
+          '90%': {
+            opacity: '1',
           },
           '100%': {
-            transform: 'translate(0px, 0px) scale(1)',
+            transform: 'translateY(-110vh) rotate(360deg)',
+            opacity: '0',
           },
         },
       },
