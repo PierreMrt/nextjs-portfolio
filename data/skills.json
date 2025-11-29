@@ -2,11 +2,11 @@
   "technical": [
     {
       "category": "Programming Languages",
-      "skills": ["Python", "SQL", "R", "JavaScript"]
+      "skills": ["Python", "SQL", "Pyspark", "VBA"]
     },
     {
       "category": "Data Analysis",
-      "skills": ["Pandas", "NumPy", "Statistical Analysis", "A/B Testing"]
+      "skills": ["Pandas", "NumPy", "Statistical Analysis"]
     },
     {
       "category": "Data Visualization",
@@ -18,7 +18,7 @@
     },
     {
       "category": "Machine Learning",
-      "skills": ["Scikit-learn", "TensorFlow", "Model Training", "Sentiment Analysis"]
+      "skills": ["Scikit-learn", "TensorFlow", "Model Training", "Sentiment Analysis", "NLP"]
     },
     {
       "category": "Tools & Technologies",
