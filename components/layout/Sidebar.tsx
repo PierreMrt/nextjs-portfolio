@@ -9,28 +9,27 @@ interface SidebarProps {
 
 export default function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
   const sections = [
-    { id: 'about', icon: Home, label: 'About' },
-    { id: 'experience', icon: Briefcase, label: 'Experience' },
-    { id: 'education', icon: GraduationCap, label: 'Education' },
-    { id: 'projects', icon: FolderOpen, label: 'Projects' },
-    { id: 'contact', icon: AtSign, label: 'Contact' },
+    { id: 'about', icon: Home, label: 'ABOUT' },
+    { id: 'experience', icon: Briefcase, label: 'RESUME' },
+    { id: 'education', icon: GraduationCap, label: 'EDUCATION' },
+    { id: 'projects', icon: FolderOpen, label: 'PROJECT' },
+    { id: 'contact', icon: AtSign, label: 'CONTACT' },
   ]
 
   return (
-    <div className="w-14 bg-white border-r border-gray-200 flex flex-col items-center py-6 gap-8 md:w-14 md:flex-col md:border-r md:border-b-0 max-md:w-full max-md:flex-row max-md:py-3 max-md:px-4 max-md:gap-2 max-md:border-r-0 max-md:border-b max-md:justify-around max-md:flex-shrink-0">
+    <div className="w-20 flex flex-col items-center py-4 gap-fluid md:w-20 md:flex-col max-md:w-full max-md:flex-row max-md:py-3 max-md:px-4 max-md:gap-2 max-md:justify-around max-md:flex-shrink-0">
       {sections.map(({ id, icon: Icon, label }) => (
         <button
           key={id}
           onClick={() => onSectionChange(id)}
-          className={`group relative p-3 rounded-lg transition-all ${
+          className={`group relative flex flex-col items-center gap-1 p-2 rounded-lg transition-all ${
             activeSection === id
-              ? 'bg-lime-500 text-white'
-              : 'text-gray-600 hover:bg-gray-100'
+              ? 'text-lime-500'
+              : 'text-gray-800 hover:text-lime-500'
           }`}
-          title={label}
           aria-label={label}
         >
-          <Icon className="w-5 h-5" />
+          <Icon className="icon-fluid" />
           <span className="sr-only">{label}</span>
         </button>
       ))}

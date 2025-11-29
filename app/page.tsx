@@ -13,9 +13,22 @@ export default function Home() {
     <>
       <AnimatedBackground />
       <div className="portfolio-container">
-        <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
-        <ProfileCard />
-        <ContentPanel activeSection={activeSection} />
+        <div className="sidebar-wrapper">
+          <div className="sidebar-container">
+            <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
+          </div>
+        </div>
+        <div className="main-content-wrapper">
+          <div className="profile-wrapper">
+            <div className="profile-bg"></div>
+            <div className="profile-container">
+              <ProfileCard />
+            </div>
+          </div>
+          <div className="content-container">
+            <ContentPanel activeSection={activeSection} />
+          </div>
+        </div>
       </div>
     </>
   )

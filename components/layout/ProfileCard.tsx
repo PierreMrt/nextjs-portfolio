@@ -26,7 +26,7 @@ export default function ProfileCard() {
               />
             </div>
             <div className="text-left">
-              <h1 className="text-lg font-bold text-gray-900">Pierre MERLET</h1>
+              <h1 className="text-lg font-bold text-gray-900">Pierre Merlet</h1>
               <p className="text-sm text-gray-600">Data Scientist</p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function ProfileCard() {
       </div>
 
       {/* Desktop Sidebar (hidden on mobile) */}
-      <div className="hidden md:flex w-80 bg-gray-50 border-r border-gray-200 flex-col p-8 overflow-y-auto">
+      <div className="hidden md:flex w-80 bg-white border-r border-gray-200 flex-col p-8 overflow-y-auto">
         <div className="w-32 h-32 rounded-full overflow-hidden mb-6 bg-gray-200 mx-auto">
           <Image
             src="/images/profile.jpg"
@@ -88,7 +88,7 @@ export default function ProfileCard() {
         </div>
 
         <h1 className="text-2xl font-bold text-gray-900 mb-2 text-center">
-          Pierre MERLET
+          Pierre Merlet
         </h1>
 
         <p className="text-gray-600 mb-6 text-center">

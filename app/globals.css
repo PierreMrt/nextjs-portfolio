@@ -58,12 +58,78 @@
   width: 50vw;
   max-width: 1400px;
   height: 50vh;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
   display: flex;
   z-index: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar styling - detached from main content */
+.sidebar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.sidebar-container {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin-top: 20px;
+  margin-right: -10px;
+  position: relative; 
+  z-index: 10; 
+}
+
+/* Profile and content wrapper */
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  position: relative;
+  height: 100%;
+}
+
+/* Profile container - taller than content */
+.profile-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.profile-bg {
+  position: absolute;
+  top: -35px;
+  left: -20px;
+  width: calc(100%);
+  height: calc(100%);
+  background-color: #66ba85;
+  border-radius: 5px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.profile-container {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  height: calc(100% + 30px);
+  margin-top: -15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Content container - behind profile */
+.content-container {
+  flex: 1;
+  background: white;
+  border-radius: 0 5px 5px 0; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+  position: relative;
+  z-index: 3;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Tablet and mobile responsive adjustments */
@@ -71,7 +137,17 @@
   .portfolio-container {
     width: 95vw;
     height: 95vh;
-    border-radius: 8px;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .sidebar-container {
+    border-radius: 10px;
+  }
+  
+  .profile-container,
+  .content-container {
+    border-radius: 0 5px  5px 0;
   }
 }
 
@@ -79,13 +155,62 @@
   .portfolio-container {
     width: 100vw;
     height: 100vh;
-    height: 100dvh; /* Use dynamic viewport height for mobile browsers */
-    border-radius: 0;
+    height: 100dvh;
     top: 0;
     left: 0;
     transform: none;
     flex-direction: column;
-    /* Ensure proper scrolling on iOS */
+    padding: 0;
+    gap: 0;
     -webkit-overflow-scrolling: touch;
+  }
+  
+  .sidebar-wrapper {
+    width: 100%;
+  }
+  
+  .sidebar-container {
+    border-radius: 0;
+    height: auto;
+    margin-top: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .main-content-wrapper {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .profile-wrapper {
+    width: 100%;
+  }
+  
+  .profile-bg {
+    display: none;
+  }
+  
+  .profile-container {
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #e5e7eb;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .content-container {
+    border-radius: 0;
+    box-shadow: none;
+    flex: 1;
+  }
+}
+
+@layer utilities {
+  .icon-fluid {
+    width: clamp(1.25rem, 2vh, 2rem);
+    height: clamp(1.25rem, 2vh, 2rem);
+  }
+  .gap-fluid {
+    gap: clamp(0.2rem, 1.5vh, 1.5rem);
   }
 }
