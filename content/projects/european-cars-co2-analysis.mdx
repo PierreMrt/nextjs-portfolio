@@ -1,0 +1,88 @@
+---
+title: "European Passenger Cars CO2 Analysis"
+description: "A comprehensive data science project analyzing and predicting CO₂ emissions from European passenger cars using machine learning techniques and interactive visualizations."
+tags: ["Python", "Machine Learning", "Data Analysis", "Streamlit", "Environmental Data"]
+github: "https://github.com/PierreMrt/european_passenger_cars_co2"
+image: "/images/passenger_cars.png"
+demo: ""
+featured: true
+---
+
+## Overview
+
+Identifying vehicles with the highest CO₂ emissions is crucial for understanding which technical characteristics contribute most to pollution. This project analyzes European passenger car emissions data to predict CO₂ output and identify key factors driving environmental impact.
+
+## Project Goals
+
+- Analyze CO₂ emissions patterns across European passenger cars
+- Identify technical characteristics that significantly impact pollution levels
+- Build predictive models to forecast emissions for new vehicle types
+- Provide interactive tools for exploring and comparing vehicle emissions
+
+## Features
+
+- **Comprehensive Data Pipeline**: Automated workflow from raw data to trained models
+- **Advanced Preprocessing**: Data cleaning, outlier detection, and feature engineering
+- **Machine Learning Models**: Random Forest regression with cross-validation for accurate predictions
+- **Interactive Streamlit App**: Web-based interface for exploring data and making predictions
+- **SHAP Analysis**: Explainable AI to understand which features drive predictions
+
+## Data Source
+
+The project uses the official European Environment Agency (EEA) dataset on CO₂ emissions from passenger cars under Regulation (EU) 2019/631, containing detailed specifications for millions of vehicles registered across Europe.
+
+## Technical Implementation
+
+### Data Processing Pipeline
+
+1. **Data Reduction**: Remove duplicates, handle missing values, select relevant columns
+2. **Preprocessing**: Clean column names, convert dates, normalize manufacturer names, detect outliers
+3. **Feature Engineering**: Transform numerical features (engine displacement, power, mass, vehicle age) and encode categorical variables (fuel type)
+4. **Model Training**: Scikit-learn pipeline with cross-validation for robust performance
+
+### Key Technologies
+
+- **Core**: Python, Pandas, NumPy, Scikit-learn
+- **Visualization**: Matplotlib, Seaborn, SHAP
+- **Deployment**: Streamlit for interactive web application
+- **Model Persistence**: Joblib with LZMA compression
+
+## Streamlit Application
+
+The interactive web app includes:
+
+### Exploration Pages
+- **Raw Data Analysis**: Visualize missing values, fuel type distribution, and outliers
+- **Processed Data Insights**: Correlation matrices and scatter plots for key characteristics
+- **Model Results**: Predicted vs. actual values visualization and SHAP explanations
+
+### Comparison Tools
+- Compare emissions across manufacturers
+- Analyze patterns by country of origin
+
+### Prediction Interface
+- Input vehicle specifications to predict CO₂ emissions
+- Real-time predictions using the trained Random Forest model
+
+## Usage
+
+The modular pipeline can be executed from different starting points:
+
+- **From raw data**: Complete pipeline including data reduction, preprocessing, and training
+- **From reduced data**: Skip reduction, run preprocessing and training
+- **From preprocessed data**: Train models only
+
+Individual pipeline components can also be run independently for development and testing.
+
+## Results & Insights
+
+The Random Forest model achieves high accuracy in predicting CO₂ emissions based on vehicle specifications. SHAP analysis reveals the most influential factors, helping manufacturers and policymakers identify optimization opportunities for reducing vehicular emissions.
+
+## Project Structure
+
+Organized with clean separation of concerns:
+- `scripts/`: Core pipeline components (data reduction, preprocessing, feature engineering, model training)
+- `streamlit_app/`: Interactive web application with pages and utilities
+- `exploration/`: Jupyter notebooks for data exploration
+- `models/`: Trained models saved with compression
+- `data/`: Processed datasets ready for analysis
