@@ -11,14 +11,9 @@ export default function AboutSection() {
         </h2>
         <div className="text-gray-700 space-y-4">
           <p className="text-lg leading-relaxed">
-            Tech-driven data analyst with <strong>5+ years of experience</strong> in transforming raw data into meaningful insights.
-            In-depth knowledge of database management, programming languages such as Python and SQL, 
-            and data visualization techniques to help management make the most informed decisions.
-          </p>
-          <p className="leading-relaxed">
-            Specialized in fraud detection and data analysis to support strategic decision-making. 
-            I develop automated data pipelines, create interactive dashboards, and perform statistical 
-            analysis and predictive modeling.
+            Data Scientist with <strong>3+ years</strong> of experience building machine learning models, 
+            from data pipelines to production deployment. Specialized in turning complex 
+            datasets into actionable insights using Python, SQL, and advanced statistical methods.
           </p>
         </div>
       </div>

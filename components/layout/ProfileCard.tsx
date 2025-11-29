@@ -7,7 +7,7 @@ export default function ProfileCard() {
       {/* Profile Image */}
       <div className="w-32 h-32 rounded-full overflow-hidden mb-6 bg-gray-200 mx-auto">
         <Image
-          src="/profile.jpg"
+          src="/images/profile.jpg"
           alt="Pierre MERLET"
           width={128}
           height={128}
@@ -22,7 +22,7 @@ export default function ProfileCard() {
 
       {/* Title */}
       <p className="text-gray-600 mb-6 text-center">
-        Data Analyst
+        Data Scientist
       </p>
 
       {/* Social Icons */}
@@ -59,9 +59,6 @@ export default function ProfileCard() {
 
       {/* Languages Section */}
       <div>
-        <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wider">
-          Languages
-        </h3>
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
