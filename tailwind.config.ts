@@ -11,6 +11,18 @@ const config: Config = {
       colors: {
         primary: '#0066CC',
         secondary: '#333333',
+        teal: {
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#5FBE8F',
+          600: '#4DA583',
+          700: '#0f766e',
+          800: '#115e59',
+          900: '#134e4a',
+        },
       },
       typography: {
         DEFAULT: {
