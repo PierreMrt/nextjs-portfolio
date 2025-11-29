@@ -11,7 +11,10 @@
 
 body {
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #4DB8A8 0%, #6BCFBE 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
@@ -26,4 +29,19 @@ body {
 
 .container-custom {
   @apply max-w-7xl mx-auto;
+}
+
+/* Main centered container */
+.portfolio-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
 }
