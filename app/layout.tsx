@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { PostponedPathnameNormalizer } from 'next/dist/server/future/normalizers/request/postponed'
 import { Poppins } from 'next/font/google'
+import ClientLayout from '@/components/ClientLayout'
 
 const poppinsThin = Poppins({ 
   weight: '100',
@@ -38,7 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
-        {children}
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   )

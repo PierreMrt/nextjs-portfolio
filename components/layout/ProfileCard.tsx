@@ -10,13 +10,13 @@ export default function ProfileCard() {
   return (
     <>
       {/* Mobile Header (visible only on mobile) - flex-shrink-0 prevents it from being compressed */}
-      <div className="md:hidden w-full bg-gray-50 border-b border-gray-200 p-4 flex-shrink-0">
+      <div className="md:hidden w-full bg-gray-50 dark:bg-[#31313a] border-b border-gray-200 dark:border-[#31313a] p-4 flex-shrink-0">
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-full flex items-center justify-between"
         >
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700 flex-shrink-0">
               <Image
                 src="/images/profile.jpg"
                 alt="Pierre MERLET"
@@ -26,24 +26,24 @@ export default function ProfileCard() {
               />
             </div>
             <div className="text-left">
-              <h1 className="text-lg font-bold text-gray-900">Pierre Merlet</h1>
-              <p className="text-sm text-gray-600">Data Scientist</p>
+              <h1 className="text-lg font-bold text-gray-900 dark:text-gray-100">Pierre Merlet</h1>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Data Scientist</p>
             </div>
           </div>
-          {isExpanded ? <ChevronUp className="w-5 h-5 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 flex-shrink-0" />}
+          {isExpanded ? <ChevronUp className="w-5 h-5 flex-shrink-0 dark:text-gray-300" /> : <ChevronDown className="w-5 h-5 flex-shrink-0 dark:text-gray-300" />}
         </button>
         
         {/* Expanded mobile content */}
         {isExpanded && (
-          <div className="mt-4 pt-4 border-t border-gray-300">
+          <div className="mt-4 pt-4 border-t border-gray-300 dark:border-gray-600">
             <div className="flex gap-4 items-center justify-center mb-4">
-              <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="GitHub">
+              <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="Email">
+              <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="Email">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -52,23 +52,23 @@ export default function ProfileCard() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-xl">🇫🇷</span>
-                  <span className="text-sm font-medium text-gray-700">French</span>
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">French</span>
                 </div>
-                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Native</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Native</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-xl">🇬🇧</span>
-                  <span className="text-sm font-medium text-gray-700">English</span>
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">English</span>
                 </div>
-                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Fluent</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-xl">🇮🇹</span>
-                  <span className="text-sm font-medium text-gray-700">Italian</span>
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Italian</span>
                 </div>
-                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Fluent</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
               </div>
             </div>
           </div>
@@ -76,8 +76,8 @@ export default function ProfileCard() {
       </div>
 
       {/* Desktop Sidebar (hidden on mobile) */}
-      <div className="hidden md:flex w-80 bg-white border-r border-gray-200 flex-col p-8 overflow-y-auto">
-        <div className="w-32 h-32 rounded-full overflow-hidden mb-6 bg-gray-200 mx-auto">
+      <div className="hidden md:flex w-80 bg-white dark:bg-[#31313a] dark:border-gray-600 flex-col p-8 overflow-y-auto">
+        <div className="w-32 h-32 rounded-full overflow-hidden mb-6 bg-gray-200 dark:bg-gray-700 mx-auto">
           <Image
             src="/images/profile.jpg"
             alt="Pierre MERLET"
@@ -87,49 +87,49 @@ export default function ProfileCard() {
           />
         </div>
 
-        <h1 className="text-2xl font-semibold text-gray-900 mb-2 text-center">
+        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 text-center">
           Pierre Merlet
         </h1>
 
-        <p className="text-gray-600 mb-6 text-center">
+        <p className="text-gray-600 dark:text-gray-400 mb-6 text-center">
           Data Scientist
         </p>
 
         <div className="flex gap-4 items-center justify-center mb-8">
-          <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="GitHub">
+          <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/pierre-merlet-553028a9/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="LinkedIn">
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 hover:text-lime-500 transition-colors" aria-label="Email">
+          <a href="mailto:pierre.merlet@proton.me" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="Email">
             <Mail className="w-5 h-5" />
           </a>
         </div>
 
-        <div className="border-t border-gray-300 mb-6"></div>
+        <div className="border-t border-gray-300 dark:border-gray-600 mb-6"></div>
 
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🇫🇷</span>
-              <span className="text-sm font-medium text-gray-700">French</span>
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">French</span>
             </div>
-            <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Native</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Native</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🇬🇧</span>
-              <span className="text-sm font-medium text-gray-700">English</span>
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">English</span>
             </div>
-            <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Fluent</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🇮🇹</span>
-              <span className="text-sm font-medium text-gray-700">Italian</span>
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Italian</span>
             </div>
-            <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Fluent</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
           </div>
         </div>
       </div>
