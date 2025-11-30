@@ -1,30 +1,101 @@
-# Next.js Portfolio
+# Next.js Data Scientist Portfolio
 
-https://preview.themeforest.net/item/ryan-vcard-resume-cv-template/full_screen_preview/21584603
-A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+A modern, multilingual portfolio website built with Next.js 14, featuring dark mode support and internationalization (i18n) for English, French, and Italian.
 
-## Features
+## 🌟 Features
 
-- 🎨 Modern, clean design with smooth animations
-- 📱 Fully responsive layout
-- ⚡ Built with Next.js App Router
-- 🎯 TypeScript for type safety
-- 💅 Styled with Tailwind CSS
-- 🖼️ Optimized images with Next.js Image component
+### Multilingual Support (i18n)
+- **3 Languages**: English, French, and Italian
+- **Dynamic Language Switching**: Click on language flags to instantly switch between languages
+- **Locale-Based Routing**: Each language has its own URL path (`/en`, `/fr`, `/it`)
+- **Fully Translated Content**: All UI labels, professional experience, projects, education, and skills are translated
 
-## Tech Stack
+### Dark/Light Mode
+- **Theme Toggle**: Switch between light and dark themes with a single click
+- **Persistent Preference**: Your theme choice is saved in localStorage
+- **Smooth Transitions**: Seamless color transitions between themes
 
-- **Framework:** Next.js
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **Deployment:** Vercel (recommended)
+### Responsive Design
+- **Mobile-First**: Optimized for all screen sizes
+- **Collapsible Mobile Menu**: Profile section collapses on mobile for better UX
+- **Adaptive Sidebar**: Horizontal navigation on mobile, vertical on desktop
 
-## Getting Started
+### Interactive Sections
+- **About**: Personal introduction with technical and soft skills
+- **Experience**: Professional work history with detailed responsibilities
+- **Education**: Academic background with course details
+- **Projects**: Featured data science projects with live demos and GitHub links
+- **Contact**: Multiple contact methods with interactive cards
+
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Fonts**: Google Fonts (Poppins)
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 📁 Project Structure
+
+``` text
+nextjs-portfolio/
+├── app/
+│ ├── [locale]/ # Locale-based routing
+│ │ ├── layout.tsx # Main layout with providers
+│ │ └── page.tsx # Homepage
+│ ├── globals.css # Global styles
+│ └── layout.tsx # Root layout
+├── components/
+│ ├── layout/
+│ │ ├── ProfileCard.tsx # Profile with language switcher
+│ │ ├── Sidebar.tsx # Navigation sidebar
+│ │ └── ContentPanel.tsx # Main content area
+│ ├── sections/
+│ │ ├── AboutSection.tsx
+│ │ ├── ExperienceSection.tsx
+│ │ ├── EducationSection.tsx
+│ │ ├── ProjectsSection.tsx
+│ │ └── ContactSection.tsx
+│ ├── ThemeProvider.tsx # Dark/light mode context
+│ ├── Providers.tsx # Combined providers wrapper
+│ └── AnimatedBackground.tsx
+├── contexts/
+│ └── LanguageContext.tsx # i18n context and logic
+├── hooks/
+│ └── useTranslation.ts # Translation hook
+├── data/
+│ ├── en/ # English data files
+│ │ ├── experience.json
+│ │ ├── projects.json
+│ │ ├── education.json
+│ │ └── skills.json
+│ ├── fr/ # French data files
+│ │ ├── experience.json
+│ │ ├── projects.json
+│ │ ├── education.json
+│ │ └── skills.json
+│ └── it/ # Italian data files
+│ ├── experience.json
+│ ├── projects.json
+│ ├── education.json
+│ └── skills.json
+├── locales/
+│ ├── en.json # English UI translations
+│ ├── fr.json # French UI translations
+│ └── it.json # Italian UI translations
+├── middleware.ts # Locale detection and routing
+└── public/
+└── images/
+└── profile.jpg
+```
+
+## 🛠️ Installation & Setup
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 14+ 
 - npm or yarn
 
 ### Installation
@@ -51,35 +122,73 @@ npm run dev
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 
+## 🎨 Customization
 
-## Project Structure
+### Changing Colors
 
-``` text
-nextjs-portfolio/
-├── app/            # Next.js app directory
-│ ├── layout.tsx    # Root layout
-│ ├── page.tsx      # Home page
-│ └── globals.css   # Global styles
-├── components/     # React components
-│ ├── layout/       # Layout components
-│ └── sections/     # Page sections
-├── data/           # Data files (JSON)
-└── public/         # Static assets
+Edit the color scheme in `tailwind.config.ts` and update the lime accent color:
+
+``` code
+colors: {
+    lime: {
+        // Your custom color palette
+    }
+}
 ```
 
-## Customization
+### Adding New Sections
 
-1. **Update personal information:** Edit the JSON files in the `data/` directory
-2. **Modify colors:** Update the Tailwind config in `tailwind.config.ts`
-3. **Change layout:** Modify components in `components/layout/`
-4. **Update sections:** Edit components in `components/sections/`
+1. Create component in `components/sections/`
+2. Add translation keys to `locales/*.json`
+3. Create data files in `data/{locale}/` if needed
+4. Import and use in `components/layout/ContentPanel.tsx`
 
-## Deployment
+### Modifying Theme
 
-The easiest way to deploy is using [Vercel](https://vercel.com):
+The theme is managed by `ThemeProvider.tsx`:
+- Light/dark mode toggle in Sidebar
+- Persisted in localStorage
+- CSS classes: `dark:` prefix for dark mode styles
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PierreMrt/nextjs-portfolio)
+## 📝 Content Management
 
-## License
+All content is stored in JSON files for easy updates:
+
+### Profile Information
+- Edit `components/layout/ProfileCard.tsx`
+- Update `locales/{locale}.json` for name/title translations
+
+### Professional Experience
+- Edit `data/{locale}/experience.json`
+- Each entry includes: title, company, dates, description, responsibilities, technologies
+
+### Projects
+- Edit `data/{locale}/projects.json`
+- Each project includes: title, description, technologies, GitHub link, highlights
+
+### Education
+- Edit `data/{locale}/education.json`
+- Each entry includes: degree, institution, dates, description
+
+### Skills
+- Edit `data/{locale}/skills.json`
+- Organized by technical categories and soft skills
+
+
+## 🚀 Deployment
+
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Deploy automatically
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Icons by [Lucide](https://lucide.dev/)
+- Fonts from [Google Fonts](https://fonts.google.com/)
+- Inspired from [RyanCV](https://ryancv.bslthemes.com/)
