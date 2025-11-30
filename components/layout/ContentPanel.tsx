@@ -29,7 +29,7 @@ export default function ContentPanel({ activeSection }: ContentPanelProps) {
   }
 
   return (
-    <div className="p-8 md:p-8 max-md:p-6">
+    <div className="px-8 md:p-8 max-md:p-6">
       <div className="max-md:pb-4">
         {renderSection()}
       </div>

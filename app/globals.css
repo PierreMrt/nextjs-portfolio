@@ -132,6 +132,35 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* Top mask - white*/
+.content-container::before {
+  content: '';
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: white;
+  z-index: 4;
+  pointer-events: none;
+  display: block;
+}
+
+/* Bottom mask - white*/
+.content-container::after {
+  content: '';
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: white;
+  z-index: 4;
+  pointer-events: none;
+  display: block;
+  margin-top: -60px;
+}
+
 /* Tablet and mobile responsive adjustments */
 @media (max-width: 1024px) {
   .portfolio-container {
@@ -202,6 +231,11 @@
     border-radius: 0;
     box-shadow: none;
     flex: 1;
+  }
+
+  .content-container::before,
+  .content-container::after {
+    display: none;
   }
 }
 
