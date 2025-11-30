@@ -2,6 +2,7 @@
 
 import { Home, Briefcase, GraduationCap, FolderOpen, AtSign, Moon, Sun } from 'lucide-react'
 import { useTheme } from '../ThemeProvider'
+import { useTranslation } from '@/hooks/useTranslation'
 
 interface SidebarProps {
   activeSection: string
@@ -10,13 +11,14 @@ interface SidebarProps {
 
 export default function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
   const { theme, toggleTheme } = useTheme()
+  const { t } = useTranslation()
   
   const sections = [
-    { id: 'about', icon: Home, label: 'ABOUT' },
-    { id: 'experience', icon: Briefcase, label: 'RESUME' },
-    { id: 'education', icon: GraduationCap, label: 'EDUCATION' },
-    { id: 'projects', icon: FolderOpen, label: 'PROJECT' },
-    { id: 'contact', icon: AtSign, label: 'CONTACT' },
+    { id: 'about', icon: Home, label: t('nav.about').toUpperCase() },
+    { id: 'experience', icon: Briefcase, label: t('nav.experience').toUpperCase() },
+    { id: 'education', icon: GraduationCap, label: t('nav.education').toUpperCase() },
+    { id: 'projects', icon: FolderOpen, label: t('nav.projects').toUpperCase() },
+    { id: 'contact', icon: AtSign, label: t('nav.contact').toUpperCase() },
   ]
 
   return (

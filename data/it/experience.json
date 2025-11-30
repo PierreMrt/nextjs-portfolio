@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "title": "Data Scientist & Referente Data Frode",
+    "company": "Caisse des Dépôts",
+    "location": "Angers, Francia",
+    "startDate": "Dicembre 2021",
+    "endDate": "Presente",
+    "description": "Trasformazione di dati grezzi in insights utilizzabili per il processo decisionale strategico. Specializzato nel rilevamento di frodi e nell'analisi dei dati per supportare le decisioni gestionali attraverso dashboard e report completi.",
+    "responsibilities": [
+      "Sviluppo di pipeline di dati automatizzate utilizzando Python e SQL per il rilevamento di frodi",
+      "Creazione di dashboard interattive per il reporting gestionale e il monitoraggio delle frodi",
+      "Esecuzione di analisi statistiche e modellazione predittiva",
+      "Collaborazione con team interfunzionali per identificare soluzioni basate sui dati",
+      "Guida delle iniziative di rilevamento frodi e implementazione di framework di valutazione del rischio"
+    ],
+    "technologies": ["Python", "Pyspark", "SQL", "Tableau", "Alteryx", "Analisi Dati", "Rilevamento Frodi"]
+  },
+  {
+    "id": "2",
+    "title": "Analista Business Intelligence",
+    "company": "IVECO",
+    "location": "Torino, Italia",
+    "startDate": "Ottobre 2019",
+    "endDate": "Ottobre 2021",
+    "description": "Focalizzato sulla raccolta e standardizzazione di dati dai sistemi ERP, creazione di soluzioni di business intelligence per supportare il processo decisionale operativo.",
+    "responsibilities": [
+      "Raccolta e standardizzazione di dati da più sistemi ERP",
+      "Sviluppo di dashboard BI e soluzioni di reporting",
+      "Analisi dei processi aziendali e identificazione delle opportunità di ottimizzazione",
+      "Collaborazione con gli stakeholder per definire KPI e metriche"
+    ],
+    "technologies": ["Excel", "VBA", "Access DB", "Business Intelligence", "Sistemi ERP", "Visualizzazione Dati"]
+  },
+  {
+    "id": "3",
+    "title": "Assistente, Consulenza Commerciale & Supply Chain",
+    "company": "Mondi Group",
+    "location": "Vienna, Austria",
+    "startDate": "Agosto 2018",
+    "endDate": "Dicembre 2018",
+    "description": "Miglioramento dei processi aziendali attraverso l'automazione e la consulenza su analitiche e ottimizzazione della supply chain.",
+    "responsibilities": [
+      "Automatizzazione dei processi e workflow aziendali",
+      "Consulenza sull'ottimizzazione della supply chain",
+      "Analisi delle operazioni commerciali e identificazione delle aree di miglioramento",
+      "Supporto al processo decisionale attraverso l'analisi dei dati"
+    ],
+    "technologies": ["Automazione Processi", "Analitiche Supply Chain", "Excel", "VBA", "Analisi Dati"]
+  },
+  {
+    "id": "4",
+    "title": "Gestione Progetti",
+    "company": "AGC Automotive Europe",
+    "location": "Louvain-la-Neuve, Belgio",
+    "startDate": "Gennaio 2017",
+    "endDate": "Luglio 2017",
+    "description": "Gestione di progetti interfunzionali nelle operazioni di supply chain automotive.",
+    "responsibilities": [
+      "Coordinamento di progetti interfunzionali",
+      "Creazione e miglioramento di strumenti e KPI",
+      "Garanzia della consegna del progetto nei tempi e nell'ambito previsti",
+      "Facilitazione della comunicazione tra gli stakeholder"
+    ],
+    "technologies": ["Gestione Progetti", "Supply Chain", "Gestione Stakeholder"]
+  },
+  {
+    "id": "5",
+    "title": "Acquisti",
+    "company": "ENGIE Axima",
+    "location": "Nantes, Francia",
+    "startDate": "Maggio 2016",
+    "endDate": "Dicembre 2016",
+    "description": "Supporto al sourcing strategico e ottimizzazione dei processi di approvvigionamento.",
+    "responsibilities": [
+      "Gestione delle attività di sourcing strategico",
+      "Ottimizzazione dei processi di approvvigionamento",
+      "Negoziazione con i fornitori",
+      "Analisi dei dati e costi degli acquisti"
+    ],
+    "technologies": ["Approvvigionamento", "Gestione Fornitori", "Analisi Costi"]
+  }
+]

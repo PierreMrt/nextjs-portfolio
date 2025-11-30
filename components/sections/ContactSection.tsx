@@ -1,17 +1,22 @@
+'use client'
+
 import { Mail, Linkedin, Github, MapPin } from 'lucide-react'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function ContactSection() {
+  const { t } = useTranslation()
+
   return (
     <div>
       <h2 className="text-2xl font-semibold mb-6">
-        <span className="text-lime-600">Contact</span>{" "}
-        <span className="text-gray-900 dark:text-gray-100">Me</span>
+        <span className="text-lime-600">{t('contact.title')}</span>{" "}
+        <span className="text-gray-900 dark:text-gray-100">{t('contact.subtitle')}</span>
       </h2>
 
       <div className="space-y-6">
         <div>
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            Feel free to reach out for collaborations, opportunities, or just to connect!
+            {t('contact.description')}
           </p>
         </div>
 
@@ -24,7 +29,7 @@ export default function ContactSection() {
               <Mail className="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-lime-600 dark:group-hover:text-lime-400" />
             </div>
             <div>
-              <p className="font-medium text-gray-900 dark:text-gray-100">Email</p>
+              <p className="font-medium text-gray-900 dark:text-gray-100">{t('contact.info.email')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">pierre.merlet@proton.me</p>
             </div>
           </a>
@@ -64,8 +69,8 @@ export default function ContactSection() {
               <MapPin className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <div>
-              <p className="font-medium text-gray-900 dark:text-gray-100">Location</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Angers, France</p>
+              <p className="font-medium text-gray-900 dark:text-gray-100">{t('contact.info.location')}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('contact.info.locationValue')}</p>
             </div>
           </div>
         </div>

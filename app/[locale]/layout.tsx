@@ -1,8 +1,7 @@
-import './globals.css'
+import '../globals.css'
 import type { Metadata } from 'next'
-import { PostponedPathnameNormalizer } from 'next/dist/server/future/normalizers/request/postponed'
 import { Poppins } from 'next/font/google'
-import ClientLayout from '@/components/ClientLayout'
+import Providers from '@/components/Providers'
 
 const poppinsThin = Poppins({ 
   weight: '100',
@@ -31,17 +30,29 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'fr' },
+    { locale: 'it' },
+  ]
+}
+
+export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: Promise<{ locale: 'en' | 'fr' | 'it' }>
 }) {
+  const { locale } = await params
+  
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth">
       <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
-        <ClientLayout>
+        <Providers locale={locale}>
           {children}
-        </ClientLayout>
+        </Providers>
       </body>
     </html>
   )

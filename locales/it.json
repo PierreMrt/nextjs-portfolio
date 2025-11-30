@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "name": "Pierre Merlet",
+    "title": "Data Scientist",
+    "languages": {
+      "french": "Francese",
+      "english": "Inglese",
+      "italian": "Italiano",
+      "levels": {
+        "native": "Madrelingua",
+        "fluent": "Fluente"
+      }
+    }
+  },
+  "nav": {
+    "about": "Chi sono",
+    "experience": "Esperienza",
+    "education": "Formazione",
+    "projects": "Progetti",
+    "contact": "Contatti"
+  },
+  "about": {
+    "title": "Chi",
+    "subtitle": "sono",
+    "description": "Data Scientist con <strong>oltre 3 anni</strong> di esperienza nella creazione di modelli di machine learning, dalle pipeline di dati al deployment in produzione. Specializzato nel trasformare dataset complessi in insight utilizzabili usando Python, SQL e metodi statistici avanzati.",
+    "skills": {
+      "title": "Competenze",
+      "subtitle": "& Expertise",
+      "technical": "Competenze Tecniche",
+      "soft": "Soft Skills"
+    }
+  },
+  "experience": {
+    "title": "Esperienza",
+    "subtitle": "Professionale"
+  },
+  "education": {
+    "title": "Formazione"
+  },
+  "projects": {
+    "title": "Progetti",
+    "subtitle": "In Evidenza",
+    "viewProject": "Visualizza Progetto"
+  },
+  "contact": {
+    "title": "Mettiti in",
+    "subtitle": "Contatto",
+    "description": "Sentiti libero di contattarmi per qualsiasi richiesta, opportunità di collaborazione, o semplicemente per salutare!",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "send": "Invia Messaggio",
+      "sending": "Invio in corso..."
+    },
+    "info": {
+      "title": "Informazioni di Contatto",
+      "email": "Email",
+      "location": "Posizione",
+      "locationValue": "Parigi, Francia"
+    }
+  }
+}

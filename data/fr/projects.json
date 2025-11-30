@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Analyse CO2 des Voitures Particulières Européennes",
+    "description": "Un projet complet de data science analysant et prédisant les émissions de CO₂ des voitures particulières européennes à l'aide de techniques d'apprentissage automatique et de visualisations interactives. Construit avec Python, Scikit-learn et Streamlit.",
+    "technologies": ["Python", "Machine Learning", "Streamlit", "Pandas", "Scikit-learn", "SHAP"],
+    "github": "https://github.com/PierreMrt/european_passenger_cars_co2",
+    "link": "https://github.com/PierreMrt/european_passenger_cars_co2",
+    "featured": true,
+    "highlights": [
+      "Modèle Random Forest pour la prédiction des émissions de CO₂",
+      "Application web interactive Streamlit",
+      "Analyse SHAP pour l'explicabilité du modèle",
+      "Pipeline de traitement de données automatisé"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Simulation d'Écosystème à Évolution Neuronale",
+    "description": "Une simulation évolutive en temps réel où des créatures avec des cerveaux en réseaux de neurones évoluent par sélection naturelle, mutation et survie dans un écosystème dynamique. Propose une évolution inspirée de NEAT et des dynamiques complexes prédateur-proie.",
+    "technologies": ["Python", "Réseaux de Neurones", "Pygame", "Évolution", "IA", "Simulation"],
+    "github": "https://github.com/PierreMrt/evolution_sim",
+    "link": "https://github.com/PierreMrt/evolution_sim",
+    "featured": true,
+    "highlights": [
+      "Réseaux de neurones dynamiques contrôlant le comportement des créatures",
+      "Algorithme évolutif inspiré de NEAT",
+      "Visualisation d'écosystème en temps réel",
+      "Formation d'espèces par clustering génétique"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Analyse de Sentiment sur les Avis Amazon",
+    "description": "Projet d'apprentissage automatique pour classifier les avis de produits Amazon comme positifs ou négatifs. Entraînement de plusieurs modèles incluant Régression Logistique, SVM et Réseaux de Neurones, atteignant 92% de précision.",
+    "technologies": ["Python", "Machine Learning", "NLP", "Scikit-learn", "NLTK"],
+    "github": "https://github.com/PierreMrt/amazon_sentiment_analysis",
+    "link": "https://github.com/PierreMrt/amazon_sentiment_analysis",
+    "featured": true,
+    "highlights": [
+      "92% de précision de classification",
+      "Extraction de caractéristiques TF-IDF",
+      "Comparaison de plusieurs modèles",
+      "Prétraitement et tokenisation du texte"
+    ]
+  }
+]

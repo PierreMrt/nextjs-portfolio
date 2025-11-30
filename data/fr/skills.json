@@ -1,0 +1,35 @@
+{
+  "technical": [
+    {
+      "category": "Langages de Programmation",
+      "skills": ["Python", "SQL", "Pyspark", "VBA"]
+    },
+    {
+      "category": "Data Science",
+      "skills": ["Scikit-learn", "TensorFlow", "Entraînement de Modèles", "Analyse de Sentiment", "NLP", "Réseaux de Neurones"]
+    },
+    {
+      "category": "Analyse de Données",
+      "skills": ["Pandas", "NumPy", "Analyse Statistique"]
+    },
+    {
+      "category": "Visualisation de Données",
+      "skills": ["Tableau", "Matplotlib", "Seaborn", "Plotly"]
+    },
+    {
+      "category": "Bases de Données",
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"]
+    },
+    {
+      "category": "Outils & Technologies",
+      "skills": ["Git", "Docker", "Jupyter", "Excel", "Alteryx"]
+    }
+  ],
+  "soft": [
+    "Résolution de Problèmes",
+    "Communication",
+    "Collaboration en Équipe",
+    "Gestion de Projet",
+    "Pensée Analytique"
+  ]
+}

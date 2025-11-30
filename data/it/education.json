@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "degree": "Master in Economia e Gestione",
+    "institution": "ESC Rennes (Rennes School of Business)",
+    "location": "Rennes, Francia",
+    "startDate": "2015",
+    "endDate": "2019",
+    "description": "100% dei corsi in inglese: Gestione della Supply Chain, Acquisti, Finanza, Gestione IT, Strategia",
+    "details": "100% dei corsi in inglese: Gestione della Supply Chain, Acquisti, Finanza, Gestione IT, Strategia"
+  },
+  {
+    "id": "2",
+    "degree": "Semestre Erasmus",
+    "institution": "MCI Innsbruck",
+    "location": "Innsbruck, Austria",
+    "startDate": "2018",
+    "endDate": "2018",
+    "description": "100% dei corsi in inglese: Finanza Internazionale, Strategia, Gestione dell'Innovazione",
+    "details": "100% dei corsi in inglese: Finanza Internazionale, Strategia, Gestione dell'Innovazione"
+  },
+  {
+    "id": "3",
+    "degree": "Laurea in Economia e Gestione",
+    "institution": "Excelia",
+    "location": "La Rochelle, Francia",
+    "startDate": "2012",
+    "endDate": "2015",
+    "description": "50% dei corsi in inglese: Gestione degli Affari Internazionali: Marketing, Acquisti Internazionali, Finanza, Espressione orale",
+    "details": "50% dei corsi in inglese: Gestione degli Affari Internazionali: Marketing, Acquisti Internazionali, Finanza, Espressione orale"
+  },
+  {
+    "id": "4",
+    "degree": "Semestre Erasmus",
+    "institution": "Hogeschool van Amsterdam (Università di Scienze Applicate di Amsterdam)",
+    "location": "Amsterdam, Paesi Bassi",
+    "startDate": "2013",
+    "endDate": "2013",
+    "description": "100% dei corsi in inglese: Finanza (Investimenti, Moneta e Finanza Internazionale), E-commerce",
+    "details": "100% dei corsi in inglese: Finanza (Investimenti, Moneta e Finanza Internazionale), E-commerce"
+  }
+]
