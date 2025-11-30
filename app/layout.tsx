@@ -1,8 +1,18 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const robotoThin = Roboto({ 
+  weight: '100',
+  subsets: ['latin'],
+  variable: '--font-roboto-thin',
+})
+
+const robotoLight = Roboto({ 
+  weight: '300',
+  subsets: ['latin'],
+  variable: '--font-roboto-light',
+})
 
 export const metadata: Metadata = {
   title: 'Pierre Merlet - Data Scientist',
@@ -26,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className={`${robotoThin.variable} ${robotoLight.variable} font-thin`}>
         {children}
       </body>
     </html>
