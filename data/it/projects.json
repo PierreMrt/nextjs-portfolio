@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Analisi CO2 delle Auto Passeggeri Europee",
+    "description": "Un progetto completo di data science che analizza e prevede le emissioni di CO₂ delle auto passeggeri europee utilizzando tecniche di machine learning e visualizzazioni interattive. Costruito con Python, Scikit-learn e Streamlit.",
+    "technologies": ["Python", "Machine Learning", "Streamlit", "Pandas", "Scikit-learn", "SHAP"],
+    "github": "https://github.com/PierreMrt/european_passenger_cars_co2",
+    "link": "https://github.com/PierreMrt/european_passenger_cars_co2",
+    "featured": true,
+    "highlights": [
+      "Modello Random Forest per la previsione delle emissioni di CO₂",
+      "Applicazione web interattiva Streamlit",
+      "Analisi SHAP per la spiegabilità del modello",
+      "Pipeline automatizzata di elaborazione dati"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Simulazione di Ecosistema con Evoluzione Neurale",
+    "description": "Una simulazione evolutiva in tempo reale dove creature con cervelli a reti neurali evolvono attraverso selezione naturale, mutazione e sopravvivenza in un ecosistema dinamico. Presenta evoluzione ispirata a NEAT e dinamiche complesse predatore-preda.",
+    "technologies": ["Python", "Reti Neurali", "Pygame", "Evoluzione", "IA", "Simulazione"],
+    "github": "https://github.com/PierreMrt/evolution_sim",
+    "link": "https://github.com/PierreMrt/evolution_sim",
+    "featured": true,
+    "highlights": [
+      "Reti neurali dinamiche che controllano il comportamento delle creature",
+      "Algoritmo evolutivo ispirato a NEAT",
+      "Visualizzazione dell'ecosistema in tempo reale",
+      "Formazione di specie attraverso clustering genetico"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Analisi del Sentiment sulle Recensioni Amazon",
+    "description": "Progetto di machine learning per classificare le recensioni dei prodotti Amazon come positive o negative. Addestrati più modelli tra cui Regressione Logistica, SVM e Reti Neurali, raggiungendo un'accuratezza del 92%.",
+    "technologies": ["Python", "Machine Learning", "NLP", "Scikit-learn", "NLTK"],
+    "github": "https://github.com/PierreMrt/amazon_sentiment_analysis",
+    "link": "https://github.com/PierreMrt/amazon_sentiment_analysis",
+    "featured": true,
+    "highlights": [
+      "92% di accuratezza nella classificazione",
+      "Estrazione di caratteristiche TF-IDF",
+      "Confronto di più modelli",
+      "Preprocessing e tokenizzazione del testo"
+    ]
+  }
+]
