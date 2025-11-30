@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply font-sans;
+    @apply font-thin;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-light;
   }
 }
 
@@ -168,7 +168,7 @@
   z-index: 4;
   pointer-events: none;
   display: block;
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 /* Tablet and mobile responsive adjustments */
