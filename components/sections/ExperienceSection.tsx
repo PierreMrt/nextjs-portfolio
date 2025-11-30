@@ -1,11 +1,11 @@
 'use client'
 
-import experienceData from '@/data/experience.json'
 import { useTranslation } from '@/hooks/useTranslation'
 
 export default function ExperienceSection() {
+  const { t, locale } = useTranslation()
+  const experienceData = require(`@/data/${locale}/experience.json`)
   const experience = experienceData
-  const { t } = useTranslation()
 
   return (
     <div>
@@ -15,7 +15,7 @@ export default function ExperienceSection() {
       </h2>
 
       <div className="space-y-8">
-        {experience.map((job, index) => (
+        {experience.map((job: any, index: number) => (
           <div key={index} className="border-l-2 border-lime-600 pl-6">
             <div className="mb-2">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
@@ -26,7 +26,7 @@ export default function ExperienceSection() {
             </div>
             <p className="text-gray-700 dark:text-gray-300 mb-3">{job.description}</p>
             <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-              {job.responsibilities.map((responsibility, i) => (
+              {job.responsibilities.map((responsibility: string, i: number) => (
                 <li key={i}>{responsibility}</li>
               ))}
             </ul>

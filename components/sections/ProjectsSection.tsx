@@ -1,12 +1,12 @@
 'use client'
 
-import projectsData from '@/data/projects.json'
 import { ExternalLink } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 
 export default function ProjectsSection() {
+  const { t, locale } = useTranslation()
+  const projectsData = require(`@/data/${locale}/projects.json`)
   const projects = projectsData
-  const { t } = useTranslation()
 
   return (
     <div>
@@ -16,7 +16,7 @@ export default function ProjectsSection() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project, index) => (
+        {projects.map((project: any, index: number) => (
           <div
             key={index}
             className="bg-gray-50 dark:bg-[#222832] rounded-lg p-6 hover:shadow-lg transition-shadow"
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              {project.technologies.map((tech, i) => (
+              {project.technologies.map((tech: string, i: number) => (
                 <span
                   key={i}
                   className="px-3 py-1 bg-lime-100 dark:bg-lime-900 text-lime-800 dark:text-lime-300 rounded text-sm"

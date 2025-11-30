@@ -1,11 +1,11 @@
 'use client'
 
-import skillsData from '@/data/skills.json'
 import { useTranslation } from '@/hooks/useTranslation'
 
 export default function AboutSection() {
+  const { t, locale } = useTranslation()
+  const skillsData = require(`@/data/${locale}/skills.json`)
   const skills = skillsData
-  const { t } = useTranslation()
 
   return (
     <div className="space-y-8">
