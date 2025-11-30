@@ -1,6 +1,7 @@
 'use client'
 
-import { Home, Briefcase, GraduationCap, FolderOpen, AtSign } from 'lucide-react'
+import { Home, Briefcase, GraduationCap, FolderOpen, AtSign, Moon, Sun } from 'lucide-react'
+import { useTheme } from '../ThemeProvider'
 
 interface SidebarProps {
   activeSection: string
@@ -8,6 +9,8 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
+  const { theme, toggleTheme } = useTheme()
+  
   const sections = [
     { id: 'about', icon: Home, label: 'ABOUT' },
     { id: 'experience', icon: Briefcase, label: 'RESUME' },
@@ -25,7 +28,7 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
           className={`group relative flex flex-col items-center gap-1 p-2 rounded-lg transition-all ${
             activeSection === id
               ? 'text-lime-500'
-              : 'text-gray-800 hover:text-lime-500'
+              : 'text-gray-800 dark:text-gray-200 hover:text-lime-500'
           }`}
           aria-label={label}
         >
@@ -33,6 +36,18 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
           <span className="sr-only">{label}</span>
         </button>
       ))}
+      <button
+        onClick={toggleTheme}
+        className="group relative flex flex-col items-center gap-1 p-2 rounded-lg transition-all text-gray-800 dark:text-gray-200 hover:text-lime-500"
+        aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+      >
+        {theme === 'light' ? (
+          <Moon className="icon-fluid" />
+        ) : (
+          <Sun className="icon-fluid" />
+        )}
+        <span className="sr-only">{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
+      </button>
     </div>
   )
 }
