@@ -1,8 +1,8 @@
 import '../globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import ClientLayout from '@/components/ClientLayout'
 import { LanguageProvider } from '@/contexts/LanguageContext'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 const poppinsThin = Poppins({ 
   weight: '100',
@@ -49,11 +49,11 @@ export default function LocaleLayout({
   return (
     <html lang={params.locale} className="scroll-smooth">
       <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
-        <LanguageProvider initialLocale={params.locale}>
-          <ClientLayout>
+        <ThemeProvider>
+          <LanguageProvider initialLocale={params.locale}>
             {children}
-          </ClientLayout>
-        </LanguageProvider>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   )
