@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "degree": "Master in Economy and Management",
+    "institution": "ESC Rennes (Rennes School of Business)",
+    "location": "Rennes, France",
+    "startDate": "2015",
+    "endDate": "2019",
+    "description": "100% of courses in English: Supply Chain Management, Purchasing, Finance, IT Management, Strategy",
+    "details": "100% of courses in English: Supply Chain Management, Purchasing, Finance, IT Management, Strategy"
+  },
+  {
+    "id": "2",
+    "degree": "Erasmus Semester",
+    "institution": "MCI Innsbruck",
+    "location": "Innsbruck, Austria",
+    "startDate": "2018",
+    "endDate": "2018",
+    "description": "100% of courses in English: International Finance, Strategy, Innovation Management",
+    "details": "100% of courses in English: International Finance, Strategy, Innovation Management"
+  },
+  {
+    "id": "3",
+    "degree": "Bachelor Economy and Management",
+    "institution": "Excelia",
+    "location": "La Rochelle, France",
+    "startDate": "2012",
+    "endDate": "2015",
+    "description": "50% of courses in English: International Business Management: Marketing, International Purchasing, Finance, Oral expression",
+    "details": "50% of courses in English: International Business Management: Marketing, International Purchasing, Finance, Oral expression"
+  },
+  {
+    "id": "4",
+    "degree": "Erasmus Semester",
+    "institution": "Hogeschool van Amsterdam (Amsterdam University of Applied Sciences)",
+    "location": "Amsterdam, Netherlands",
+    "startDate": "2013",
+    "endDate": "2013",
+    "description": "100% of courses in English: Finance (Investment, International Money and Finance), E-commerce",
+    "details": "100% of courses in English: Finance (Investment, International Money and Finance), E-commerce"
+  }
+]
