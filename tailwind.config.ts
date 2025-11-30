@@ -7,6 +7,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        thin: ['var(--font-roboto-thin)'],
+        light: ['var(--font-roboto-light)'],
+      },
       colors: {
         primary: '#0066CC',
         secondary: '#333333',
