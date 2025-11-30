@@ -22,11 +22,12 @@ export default function ExperienceSection() {
                 {job.title}
               </h3>
               <p className="text-lime-600 font-medium">{job.company}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">{job.period}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">{job.startDate} - {job.endDate}</p>
             </div>
+            <p className="text-gray-700 dark:text-gray-300 mb-3">{job.description}</p>
             <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-              {job.achievements.map((achievement, i) => (
-                <li key={i}>{achievement}</li>
+              {job.responsibilities.map((responsibility, i) => (
+                <li key={i}>{responsibility}</li>
               ))}
             </ul>
           </div>
