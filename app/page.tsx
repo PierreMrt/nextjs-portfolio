@@ -5,12 +5,13 @@ import Sidebar from '@/components/layout/Sidebar'
 import ProfileCard from '@/components/layout/ProfileCard'
 import ContentPanel from '@/components/layout/ContentPanel'
 import AnimatedBackground from '@/components/AnimatedBackground'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about')
 
   return (
-    <>
+    <ThemeProvider>
       <AnimatedBackground />
       <div className="portfolio-container">
         <div className="sidebar-wrapper">
@@ -30,6 +31,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </ThemeProvider>
   )
 }
