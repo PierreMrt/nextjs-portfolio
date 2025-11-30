@@ -5,7 +5,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 
 type Locale = 'en' | 'fr' | 'it'
 
-export function Providers({ 
+export default function Providers({ 
   children,
   locale 
 }: { 

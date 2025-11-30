@@ -1,37 +1,57 @@
+import '../globals.css'
 import type { Metadata } from 'next'
-import { Inter, Space_Grotesk } from 'next/font/google'
-import '@/app/globals.css'
+import { Poppins } from 'next/font/google'
 import Providers from '@/components/Providers'
 
-const inter = Inter({ subsets: ['latin'] })
-const spaceGrotesk = Space_Grotesk({ 
-  subsets: ['latin'], 
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-space-grotesk'
+const poppinsThin = Poppins({ 
+  weight: '100',
+  subsets: ['latin'],
+  variable: '--font-poppins-thin',
+})
+
+const poppinsLight = Poppins({ 
+  weight: '300',
+  subsets: ['latin'],
+  variable: '--font-poppins-light',
 })
 
 export const metadata: Metadata = {
-  title: 'Pierre Mrt - Portfolio',
-  description: 'Full Stack Developer Portfolio',
+  title: 'Pierre Merlet - Data Scientist',
+  description: 'Tech-driven data scientist with 3+ years of experience in transforming raw data into meaningful insights.',
+  keywords: 'data scientist, Python, SQL, data visualization, machine learning, data science, IA',
+  authors: [{ name: 'Pierre Merlet' }],
+  openGraph: {
+    title: 'Pierre Merlet - Data Scientist',
+    description: 'Tech-driven data scientist portfolio',
+    url: 'https://www.pierre-merlet.com',
+    siteName: 'Pierre Merlet Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+}
+
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'fr' },
+    { locale: 'it' },
+  ]
 }
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: 'en' | 'fr' | 'it' }>
 }) {
-  // In Next.js 15/14.2+, params should be awaited, though strictly passed as prop here works
-  const { locale } = await params;
-
+  const { locale } = await params
+  
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${inter.className} ${spaceGrotesk.variable} bg-white dark:bg-[#0F172A] text-gray-900 dark:text-white transition-colors duration-300`}>
+    <html lang={locale} className="scroll-smooth">
+      <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
         <Providers locale={locale}>
-          <div className="min-h-screen p-4 md:p-8 max-w-7xl mx-auto">
-            {children}
-          </div>
+          {children}
         </Providers>
       </body>
     </html>
