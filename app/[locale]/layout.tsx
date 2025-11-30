@@ -1,8 +1,7 @@
 import '../globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import { LanguageProvider } from '@/contexts/LanguageContext'
-import { ThemeProvider } from '@/components/ThemeProvider'
+import { Providers } from '@/components/Providers'
 
 const poppinsThin = Poppins({ 
   weight: '100',
@@ -39,21 +38,20 @@ export async function generateStaticParams() {
   ]
 }
 
-export default function LocaleLayout({
-  children,
-  params,
-}: {
+type Props = {
   children: React.ReactNode
-  params: { locale: 'en' | 'fr' | 'it' }
-}) {
+  params: Promise<{ locale: 'en' | 'fr' | 'it' }>
+}
+
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params
+  
   return (
-    <html lang={params.locale} className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth">
       <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
-        <ThemeProvider>
-          <LanguageProvider initialLocale={params.locale}>
-            {children}
-          </LanguageProvider>
-        </ThemeProvider>
+        <Providers locale={locale}>
+          {children}
+        </Providers>
       </body>
     </html>
   )
