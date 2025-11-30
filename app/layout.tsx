@@ -1,16 +1,18 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Poppins, Open_Sans } from 'next/font/google'
+import { PostponedPathnameNormalizer } from 'next/dist/server/future/normalizers/request/postponed'
+import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({ 
-  weight: ['400', '500', '600', '700'],
+const poppinsThin = Poppins({ 
+  weight: '100',
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--font-poppins-thin',
 })
 
-const openSans = Open_Sans({ 
+const poppinsLight = Poppins({ 
+  weight: '300',
   subsets: ['latin'],
-  variable: '--font-open-sans',
+  variable: '--font-poppins-light',
 })
 
 export const metadata: Metadata = {
@@ -35,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.variable} ${openSans.variable}`}>
+      <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
         {children}
       </body>
     </html>

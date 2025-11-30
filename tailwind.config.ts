@@ -8,8 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-open-sans)', 'sans-serif'],
-        heading: ['var(--font-poppins)', 'sans-serif'],
+        thin: ['var(--font-roboto-thin)'],
+        light: ['var(--font-roboto-light)'],
       },
       colors: {
         primary: '#0066CC',
