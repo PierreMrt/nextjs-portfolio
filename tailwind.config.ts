@@ -7,6 +7,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-open-sans)', 'sans-serif'],
+        heading: ['var(--font-poppins)', 'sans-serif'],
+      },
       colors: {
         primary: '#0066CC',
         secondary: '#333333',

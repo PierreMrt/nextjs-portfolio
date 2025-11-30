@@ -1,8 +1,17 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins, Open_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ 
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+})
+
+const openSans = Open_Sans({ 
+  subsets: ['latin'],
+  variable: '--font-open-sans',
+})
 
 export const metadata: Metadata = {
   title: 'Pierre Merlet - Data Scientist',
@@ -26,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className={`${poppins.variable} ${openSans.variable}`}>
         {children}
       </body>
     </html>

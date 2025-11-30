@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
 
 @layer utilities {
   .text-balance {
@@ -159,7 +168,7 @@
   z-index: 4;
   pointer-events: none;
   display: block;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
 /* Tablet and mobile responsive adjustments */
