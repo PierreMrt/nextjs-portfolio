@@ -1,8 +1,19 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { PostponedPathnameNormalizer } from 'next/dist/server/future/normalizers/request/postponed'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppinsThin = Poppins({ 
+  weight: '100',
+  subsets: ['latin'],
+  variable: '--font-poppins-thin',
+})
+
+const poppinsLight = Poppins({ 
+  weight: '300',
+  subsets: ['latin'],
+  variable: '--font-poppins-light',
+})
 
 export const metadata: Metadata = {
   title: 'Pierre Merlet - Data Scientist',
@@ -26,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
         {children}
       </body>
     </html>
