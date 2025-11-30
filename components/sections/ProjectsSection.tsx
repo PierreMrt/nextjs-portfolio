@@ -18,7 +18,7 @@ export default function ProjectsSection() {
         {projectsData.map((project: any) => (
           <div
             key={project.id}
-            className="border border-gray-200 dark:border-[#222832] rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#31313a]"
+            className="border border-gray-200 dark:border-[#222832] rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#181f29]"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
               {project.title}
