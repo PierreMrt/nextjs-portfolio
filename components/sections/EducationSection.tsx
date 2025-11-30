@@ -1,3 +1,5 @@
+'use client'
+
 import educationData from '@/data/education.json'
 import { useTranslation } from '@/hooks/useTranslation'
 

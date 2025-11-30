@@ -1,3 +1,5 @@
+'use client'
+
 import projectsData from '@/data/projects.json'
 import { ExternalLink } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'

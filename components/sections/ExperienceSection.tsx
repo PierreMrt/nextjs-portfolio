@@ -1,3 +1,5 @@
+'use client'
+
 import experienceData from '@/data/experience.json'
 import { useTranslation } from '@/hooks/useTranslation'
 

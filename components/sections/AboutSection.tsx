@@ -1,3 +1,5 @@
+'use client'
+
 import skillsData from '@/data/skills.json'
 import { useTranslation } from '@/hooks/useTranslation'
 
