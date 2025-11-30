@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname, useRouter } from 'next/navigation'
 import en from '@/locales/en.json'
 import fr from '@/locales/fr.json'
 import it from '@/locales/it.json'
@@ -18,19 +18,20 @@ const translations = { en, fr, it }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
+export function LanguageProvider({ children, initialLocale }: { children: ReactNode; initialLocale: Locale }) {
   const router = useRouter()
-  const [locale, setLocaleState] = useState<Locale>('en')
-
-  useEffect(() => {
-    if (router.locale && (router.locale === 'en' || router.locale === 'fr' || router.locale === 'it')) {
-      setLocaleState(router.locale as Locale)
-    }
-  }, [router.locale])
+  const pathname = usePathname()
+  const [locale, setLocaleState] = useState<Locale>(initialLocale)
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale)
-    router.push(router.pathname, router.asPath, { locale: newLocale })
+    
+    // Get the current path without the locale prefix
+    const segments = pathname.split('/')
+    const pathWithoutLocale = segments.slice(2).join('/')
+    
+    // Navigate to the new locale path
+    router.push(`/${newLocale}/${pathWithoutLocale}`)
   }
 
   const t = (key: string): string => {
