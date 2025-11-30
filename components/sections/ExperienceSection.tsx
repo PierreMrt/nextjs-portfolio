@@ -6,28 +6,28 @@ export default function ExperienceSection() {
     <div>
       <h2 className="text-2xl font-semibold mb-6">
         <span className="text-lime-600">My</span>{" "}
-        <span className="text-gray-900">Experience</span>
+        <span className="text-gray-900 dark:text-gray-100">Experience</span>
       </h2>
 
       <div className="space-y-6">
         {experienceData.map((exp) => (
           <div key={exp.id} className="border-l-4 border-lime-500 pl-6 pb-6">
             <div className="mb-3">
-              <span className="inline-block px-3 py-1 text-sm font-regular text-lime-700 bg-lime-50 rounded-full mb-2">
+              <span className="inline-block px-3 py-1 text-sm font-regular text-lime-700 dark:text-lime-400 bg-lime-50 dark:bg-lime-900 rounded-full mb-2">
                 {exp.startDate} - {exp.endDate}
               </span>
-              <h3 className="text-xl font-semibold text-gray-900 mb-1">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">
                 {exp.title}
               </h3>
-              <p className="text-gray-600 font-medium mb-1">{exp.company}</p>
-              <p className="text-sm text-gray-500 flex items-center gap-1">
+              <p className="text-gray-600 dark:text-gray-400 font-medium mb-1">{exp.company}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
                 {exp.location}
               </p>
             </div>
-            <p className="text-gray-700 mb-3">{exp.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 mb-3">{exp.description}</p>
             {exp.responsibilities && exp.responsibilities.length > 0 && (
-              <ul className="space-y-1 text-sm text-gray-600">
+              <ul className="space-y-1 text-sm text-gray-600 dark:text-gray-400">
                 {exp.responsibilities.map((resp, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <span className="text-lime-500 mt-1">•</span>
@@ -41,7 +41,7 @@ export default function ExperienceSection() {
                 {exp.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded"
+                    className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded"
                   >
                     {tech}
                   </span>
