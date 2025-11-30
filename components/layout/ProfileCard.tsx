@@ -10,7 +10,7 @@ export default function ProfileCard() {
   return (
     <>
       {/* Mobile Header (visible only on mobile) - flex-shrink-0 prevents it from being compressed */}
-      <div className="md:hidden w-full bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-600 p-4 flex-shrink-0">
+      <div className="md:hidden w-full bg-gray-50 dark:bg-[#31313a] border-b border-gray-200 dark:border-[#31313a] p-4 flex-shrink-0">
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-full flex items-center justify-between"
@@ -76,7 +76,7 @@ export default function ProfileCard() {
       </div>
 
       {/* Desktop Sidebar (hidden on mobile) */}
-      <div className="hidden md:flex w-80 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-600 flex-col p-8 overflow-y-auto">
+      <div className="hidden md:flex w-80 bg-white dark:bg-[#31313a] dark:border-gray-600 flex-col p-8 overflow-y-auto">
         <div className="w-32 h-32 rounded-full overflow-hidden mb-6 bg-gray-200 dark:bg-gray-700 mx-auto">
           <Image
             src="/images/profile.jpg"
