@@ -1,35 +1,33 @@
 import skillsData from '@/data/skills.json'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function AboutSection() {
   const skills = skillsData
+  const { t } = useTranslation()
 
   return (
     <div className="space-y-8">
       <div>
         <h2 className="text-2xl font-semibold mb-4">
-          <span className="text-lime-600">About</span>{" "}
-          <span className="text-gray-900 dark:text-gray-100">Me</span>
+          <span className="text-lime-600">{t('about.title')}</span>{" "}
+          <span className="text-gray-900 dark:text-gray-100">{t('about.subtitle')}</span>
         </h2>
         <div className="text-gray-700 dark:text-gray-300 space-y-4">
-          <p className="text-lg leading-relaxed">
-            Data Scientist with <strong>3+ years</strong> of experience building machine learning models, 
-            from data pipelines to production deployment. Specialized in turning complex 
-            datasets into actionable insights using Python, SQL, and advanced statistical methods.
-          </p>
+          <p className="text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: t('about.description') }} />
         </div>
       </div>
       
       {/* Skills Section */}
       <div>
         <h3 className="text-2xl font-semibold mb-6">
-          <span className="text-lime-600">Skills</span>{" "}
-          <span className="text-gray-900 dark:text-gray-100">& Expertise</span>
+          <span className="text-lime-600">{t('about.skills.title')}</span>{" "}
+          <span className="text-gray-900 dark:text-gray-100">{t('about.skills.subtitle')}</span>
         </h3>
         
         <div className="space-y-8">
           {/* Technical Skills */}
           <div>
-            <h4 className="text-lg font-medium mb-4 text-lime-600">Technical Skills</h4>
+            <h4 className="text-lg font-medium mb-4 text-lime-600">{t('about.skills.technical')}</h4>
             <div className="space-y-6">
               {skills.technical.map((skillGroup: any) => (
                 <div key={skillGroup.category}>
@@ -51,7 +49,7 @@ export default function AboutSection() {
 
           {/* Soft Skills */}
           <div>
-            <h4 className="text-lg font-medium mb-4 text-lime-600">Soft Skills</h4>
+            <h4 className="text-lg font-medium mb-4 text-lime-600">{t('about.skills.soft')}</h4>
             <div className="space-y-2">
               {skills.soft.map((skill: string) => (
                 <div key={skill} className="flex items-center">
