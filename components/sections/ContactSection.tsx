@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github, MapPin } from 'lucide-react'
 export default function ContactSection() {
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">
+      <h2 className="text-2xl font-semibold mb-6">
         <span className="text-lime-600">Contact</span>{" "}
         <span className="text-gray-900">Me</span>
       </h2>

@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react'
 export default function ExperienceSection() {
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">
+      <h2 className="text-2xl font-semibold mb-6">
         <span className="text-lime-600">My</span>{" "}
         <span className="text-gray-900">Experience</span>
       </h2>
@@ -13,10 +13,10 @@ export default function ExperienceSection() {
         {experienceData.map((exp) => (
           <div key={exp.id} className="border-l-4 border-lime-500 pl-6 pb-6">
             <div className="mb-3">
-              <span className="inline-block px-3 py-1 text-sm font-medium text-lime-700 bg-lime-50 rounded-full mb-2">
+              <span className="inline-block px-3 py-1 text-sm font-regular text-lime-700 bg-lime-50 rounded-full mb-2">
                 {exp.startDate} - {exp.endDate}
               </span>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">
+              <h3 className="text-xl font-semibold text-gray-900 mb-1">
                 {exp.title}
               </h3>
               <p className="text-gray-600 font-medium mb-1">{exp.company}</p>

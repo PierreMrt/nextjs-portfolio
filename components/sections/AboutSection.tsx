@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <div className="space-y-8">
       <div>
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-2xl font-semibold mb-4">
           <span className="text-lime-600">About</span>{" "}
           <span className="text-gray-900">Me</span>
         </h2>
@@ -21,7 +21,7 @@ export default function AboutSection() {
       
       {/* Skills Section */}
       <div>
-        <h3 className="text-2xl font-bold mb-6">
+        <h3 className="text-2xl font-semibold mb-6">
           <span className="text-lime-600">Skills</span>{" "}
           <span className="text-gray-900">& Expertise</span>
         </h3>
@@ -29,7 +29,7 @@ export default function AboutSection() {
         <div className="space-y-8">
           {/* Technical Skills */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-lime-600">Technical Skills</h4>
+            <h4 className="text-lg font-medium mb-4 text-lime-600">Technical Skills</h4>
             <div className="space-y-6">
               {skills.technical.map((skillGroup: any) => (
                 <div key={skillGroup.category}>
@@ -51,7 +51,7 @@ export default function AboutSection() {
 
           {/* Soft Skills */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-lime-600">Soft Skills</h4>
+            <h4 className="text-lg font-medium mb-4 text-lime-600">Soft Skills</h4>
             <div className="space-y-2">
               {skills.soft.map((skill: string) => (
                 <div key={skill} className="flex items-center">

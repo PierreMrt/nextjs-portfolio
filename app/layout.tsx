@@ -1,17 +1,18 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { PostponedPathnameNormalizer } from 'next/dist/server/future/normalizers/request/postponed'
+import { Poppins } from 'next/font/google'
 
-const robotoThin = Roboto({ 
+const poppinsThin = Poppins({ 
   weight: '100',
   subsets: ['latin'],
-  variable: '--font-roboto-thin',
+  variable: '--font-poppins-thin',
 })
 
-const robotoLight = Roboto({ 
+const poppinsLight = Poppins({ 
   weight: '300',
   subsets: ['latin'],
-  variable: '--font-roboto-light',
+  variable: '--font-poppins-light',
 })
 
 export const metadata: Metadata = {
@@ -36,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${robotoThin.variable} ${robotoLight.variable} font-thin`}>
+      <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
         {children}
       </body>
     </html>

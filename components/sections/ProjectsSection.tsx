@@ -4,7 +4,7 @@ import { Github } from 'lucide-react'
 export default function ProjectsSection() {
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">
+      <h2 className="text-2xl font-semibold mb-6">
         <span className="text-lime-600">My</span>{" "}
         <span className="text-gray-900">Projects</span>
       </h2>
@@ -15,7 +15,7 @@ export default function ProjectsSection() {
             key={project.id}
             className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white"
           >
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
               {project.title}
             </h3>
             <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>

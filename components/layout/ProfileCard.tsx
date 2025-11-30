@@ -87,7 +87,7 @@ export default function ProfileCard() {
           />
         </div>
 
-        <h1 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+        <h1 className="text-2xl font-semibold text-gray-900 mb-2 text-center">
           Pierre Merlet
         </h1>
 
