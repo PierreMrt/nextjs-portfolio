@@ -38,7 +38,7 @@ export default function AboutSection() {
                     {skillGroup.skills.map((skill: string) => (
                       <span
                         key={skill}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-lg text-sm text-gray-800 dark:text-gray-200 hover:bg-lime-50 dark:hover:bg-lime-900 hover:text-lime-700 dark:hover:text-lime-400 transition"
+                        className="px-3 py-1.5 bg-gray-600 dark:bg-gray-700 rounded text-sm text-white dark:text-gray-200 hover:bg-lime-600 dark:hover:bg-lime-900 hover:text-white dark:hover:text-lime-400 transition"
                       >
                         {skill}
                       </span>
