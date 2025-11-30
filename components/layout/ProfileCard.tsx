@@ -54,21 +54,21 @@ export default function ProfileCard() {
                   <span className="text-xl">🇫🇷</span>
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">French</span>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Native</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Native</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-xl">🇬🇧</span>
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">English</span>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Fluent</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="text-xl">🇮🇹</span>
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Italian</span>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Fluent</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
               </div>
             </div>
           </div>
@@ -115,21 +115,21 @@ export default function ProfileCard() {
               <span className="text-2xl">🇫🇷</span>
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">French</span>
             </div>
-            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Native</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Native</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🇬🇧</span>
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">English</span>
             </div>
-            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Fluent</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="text-2xl">🇮🇹</span>
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Italian</span>
             </div>
-            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Fluent</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">Fluent</span>
           </div>
         </div>
       </div>

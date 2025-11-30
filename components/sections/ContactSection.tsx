@@ -18,9 +18,9 @@ export default function ContactSection() {
         <div className="space-y-4">
           <a
             href="mailto:pierre.merlet@proton.me"
-            className="flex items-center gap-4 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-lime-500 hover:bg-lime-50 dark:hover:bg-lime-900 transition-all group"
+            className="flex items-center gap-4 p-4 border border-gray-200 dark:border-[#222832] rounded-lg hover:border-lime-500 hover:bg-lime-50 dark:hover:bg-lime-900 transition-all group"
           >
-            <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-lg group-hover:bg-lime-100 dark:group-hover:bg-lime-800 transition-colors">
+            <div className="p-3 bg-gray-100 dark:bg-[#222832] rounded-lg group-hover:bg-lime-100 dark:group-hover:bg-lime-800 transition-colors">
               <Mail className="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-lime-600 dark:group-hover:text-lime-400" />
             </div>
             <div>
@@ -33,9 +33,9 @@ export default function ContactSection() {
             href="https://www.linkedin.com/in/pierre-merlet-553028a9/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-lime-500 hover:bg-lime-50 dark:hover:bg-lime-900 transition-all group"
+            className="flex items-center gap-4 p-4 border border-gray-200 dark:border-[#222832] rounded-lg hover:border-lime-500 hover:bg-lime-50 dark:hover:bg-lime-900 transition-all group"
           >
-            <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-lg group-hover:bg-lime-100 dark:group-hover:bg-lime-800 transition-colors">
+            <div className="p-3 bg-gray-100 dark:bg-[#222832] rounded-lg group-hover:bg-lime-100 dark:group-hover:bg-lime-800 transition-colors">
               <Linkedin className="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-lime-600 dark:group-hover:text-lime-400" />
             </div>
             <div>
@@ -48,9 +48,9 @@ export default function ContactSection() {
             href="https://github.com/PierreMrt"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-lime-500 hover:bg-lime-50 dark:hover:bg-lime-900 transition-all group"
+            className="flex items-center gap-4 p-4 border border-gray-200 dark:border-[#222832] rounded-lg hover:border-lime-500 hover:bg-lime-50 dark:hover:bg-lime-900 transition-all group"
           >
-            <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-lg group-hover:bg-lime-100 dark:group-hover:bg-lime-800 transition-colors">
+            <div className="p-3 bg-gray-100 dark:bg-[#222832] rounded-lg group-hover:bg-lime-100 dark:group-hover:bg-lime-800 transition-colors">
               <Github className="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-lime-600 dark:group-hover:text-lime-400" />
             </div>
             <div>
@@ -59,8 +59,8 @@ export default function ContactSection() {
             </div>
           </a>
 
-          <div className="flex items-center gap-4 p-4 border border-gray-200 dark:border-gray-600 rounded-lg">
-            <div className="p-3 bg-gray-100 dark:bg-gray-700 rounded-lg">
+          <div className="flex items-center gap-4 p-4 border border-gray-200 dark:border-[#222832] rounded-lg">
+            <div className="p-3 bg-gray-100 dark:bg-[#222832] rounded-lg">
               <MapPin className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <div>

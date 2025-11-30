@@ -41,7 +41,7 @@ export default function ExperienceSection() {
                 {exp.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded"
+                    className="px-2 py-1 text-xs bg-gray-100 dark:bg-[#222832] text-gray-700 dark:text-gray-300 rounded"
                   >
                     {tech}
                   </span>

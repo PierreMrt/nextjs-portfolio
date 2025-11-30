@@ -13,7 +13,7 @@ export default function ProjectsSection() {
         {projectsData.map((project) => (
           <div
             key={project.id}
-            className="border border-gray-200 dark:border-gray-600 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-gray-700"
+            className="border border-gray-200 dark:border-[#222832] rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#31313a]"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
               {project.title}
@@ -47,7 +47,7 @@ export default function ProjectsSection() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 dark:bg-gray-600 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-500 transition-colors text-sm font-medium"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 dark:bg-[#222832] text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-500 transition-colors text-sm font-medium"
               >
                 <Github className="w-4 h-4" />
                 View on GitHub
