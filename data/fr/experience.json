@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "title": "Data Scientist & Référent Data Fraude",
+    "company": "Caisse des Dépôts",
+    "location": "Angers, France",
+    "startDate": "Décembre 2021",
+    "endDate": "Présent",
+    "description": "Transformation des données brutes en insights exploitables pour la prise de décision stratégique. Spécialisé dans la détection de fraude et l'analyse de données pour soutenir les décisions de gestion via des tableaux de bord et rapports complets.",
+    "responsibilities": [
+      "Développement de pipelines de données automatisés utilisant Python et SQL pour la détection de fraude",
+      "Création de tableaux de bord interactifs pour le reporting de gestion et le suivi de la fraude",
+      "Réalisation d'analyses statistiques et modélisation prédictive",
+      "Collaboration avec des équipes pluridisciplinaires pour identifier des solutions basées sur les données",
+      "Direction des initiatives de détection de fraude et mise en œuvre de cadres d'évaluation des risques"
+    ],
+    "technologies": ["Python", "Pyspark", "SQL", "Tableau", "Alteryx", "Analyse de Données", "Détection de Fraude"]
+  },
+  {
+    "id": "2",
+    "title": "Analyste Business Intelligence",
+    "company": "IVECO",
+    "location": "Turin, Italie",
+    "startDate": "Octobre 2019",
+    "endDate": "Octobre 2021",
+    "description": "Spécialisé dans la collecte et la standardisation des données des systèmes ERP, création de solutions de business intelligence pour soutenir la prise de décision opérationnelle.",
+    "responsibilities": [
+      "Collecte et standardisation des données de plusieurs systèmes ERP",
+      "Développement de tableaux de bord BI et solutions de reporting",
+      "Analyse des processus métier et identification des opportunités d'optimisation",
+      "Collaboration avec les parties prenantes pour définir les KPI et métriques"
+    ],
+    "technologies": ["Excel", "VBA", "Access DB", "Business Intelligence", "Systèmes ERP", "Visualisation de Données"]
+  },
+  {
+    "id": "3",
+    "title": "Assistant, Conseil Commercial & Supply Chain",
+    "company": "Mondi Group",
+    "location": "Vienne, Autriche",
+    "startDate": "Août 2018",
+    "endDate": "Décembre 2018",
+    "description": "Amélioration des processus métier par l'automatisation et le conseil en analytique et optimisation de la supply chain.",
+    "responsibilities": [
+      "Automatisation des processus et workflows métier",
+      "Conseil en optimisation de la supply chain",
+      "Analyse des opérations commerciales et identification des axes d'amélioration",
+      "Support à la prise de décision par l'analyse de données"
+    ],
+    "technologies": ["Automatisation des Processus", "Analytique Supply Chain", "Excel", "VBA", "Analyse de Données"]
+  },
+  {
+    "id": "4",
+    "title": "Gestion de Projet",
+    "company": "AGC Automotive Europe",
+    "location": "Louvain-la-Neuve, Belgique",
+    "startDate": "Janvier 2017",
+    "endDate": "Juillet 2017",
+    "description": "Gestion de projets transversaux dans les opérations de supply chain automobile.",
+    "responsibilities": [
+      "Coordination de projets transversaux",
+      "Création et amélioration d'outils et KPI",
+      "Garantie de livraison des projets dans les délais et le périmètre",
+      "Facilitation de la communication entre les parties prenantes"
+    ],
+    "technologies": ["Gestion de Projet", "Supply Chain", "Gestion des Parties Prenantes"]
+  },
+  {
+    "id": "5",
+    "title": "Achats",
+    "company": "ENGIE Axima",
+    "location": "Nantes, France",
+    "startDate": "Mai 2016",
+    "endDate": "Décembre 2016",
+    "description": "Support au sourcing stratégique et optimisation des processus d'approvisionnement.",
+    "responsibilities": [
+      "Gestion des activités de sourcing stratégique",
+      "Optimisation des processus d'approvisionnement",
+      "Négociation avec les fournisseurs",
+      "Analyse des données d'achat et des coûts"
+    ],
+    "technologies": ["Approvisionnement", "Gestion Fournisseurs", "Analyse des Coûts"]
+  }
+]
