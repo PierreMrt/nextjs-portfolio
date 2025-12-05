@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, ChevronDown, ChevronUp } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { GB, FR, IT } from "country-flag-icons/react/3x2";
 
 export default function ProfileCard() {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -56,7 +57,7 @@ export default function ProfileCard() {
                 className="w-full flex items-center justify-between hover:bg-gray-200 dark:hover:bg-[#222832] p-2 rounded transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-xl">🇫🇷</span>
+                  <FR title="French" className="w-6 h-4 rounded-sm"/>
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.french')}</span>
                 </div>
                 <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.native')}</span>
@@ -66,7 +67,7 @@ export default function ProfileCard() {
                 className="w-full flex items-center justify-between hover:bg-gray-200 dark:hover:bg-[#222832] p-2 rounded transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-xl">🇬🇧</span>
+                  <GB title="English" className="w-6 h-4 rounded-sm"/>
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.english')}</span>
                 </div>
                 <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
@@ -76,7 +77,7 @@ export default function ProfileCard() {
                 className="w-full flex items-center justify-between hover:bg-gray-200 dark:hover:bg-[#222832] p-2 rounded transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-xl">🇮🇹</span>
+                  <IT title="Italian" className="w-6 h-4 rounded-sm"/>
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.italian')}</span>
                 </div>
                 <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
@@ -126,7 +127,7 @@ export default function ProfileCard() {
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"
           >
             <div className="flex items-center gap-2">
-              <span className="text-fluid-lg">🇫🇷</span>
+              <FR title="French" className="w-6 h-4 rounded-sm"/>
               <span className="text-fluid-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.french')}</span>
             </div>
             <span className="text-fluid-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.native')}</span>
@@ -136,7 +137,7 @@ export default function ProfileCard() {
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"
           >
             <div className="flex items-center gap-2">
-              <span className="text-fluid-lg">🇬🇧</span>
+              <GB title="English" className="w-6 h-4 rounded-sm"/>
               <span className="text-fluid-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.english')}</span>
             </div>
             <span className="text-fluid-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
@@ -146,7 +147,7 @@ export default function ProfileCard() {
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"
           >
             <div className="flex items-center gap-2">
-              <span className="text-fluid-lg">🇮🇹</span>
+              <IT title="Italian" className="w-6 h-4 rounded-sm"/>
               <span className="text-fluid-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.italian')}</span>
             </div>
             <span className="text-fluid-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
