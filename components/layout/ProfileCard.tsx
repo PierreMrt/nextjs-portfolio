@@ -87,8 +87,8 @@ export default function ProfileCard() {
       </div>
 
       {/* Desktop Sidebar (hidden on mobile) */}
-      <div className="hidden md:flex w-80 bg-white dark:bg-[#31313a] dark:border-gray-600 flex-col p-8 overflow-y-auto">
-        <div className="w-32 h-32 rounded-full overflow-hidden mb-6 bg-gray-200 dark:bg-gray-700 mx-auto">
+      <div className="hidden md:flex w-80 bg-white dark:bg-[#31313a] dark:border-gray-600 flex-col p-fluid overflow-y-auto">
+        <div className="w-fluid-profile rounded-full overflow-hidden mb-fluid bg-gray-200 dark:bg-gray-700 mx-auto">
           <Image
             src="/images/profile.jpg"
             alt="Pierre MERLET"
@@ -98,15 +98,15 @@ export default function ProfileCard() {
           />
         </div>
 
-        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 text-center">
+        <h1 className="text-fluid-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2 text-center">
           {t('profile.name')}
         </h1>
 
-        <p className="text-gray-600 dark:text-gray-400 mb-6 text-center">
+        <p className="text-fluid-base text-gray-600 dark:text-gray-400 mb-fluid text-center">
           {t('profile.title')}
         </p>
 
-        <div className="flex gap-4 items-center justify-center mb-8">
+        <div className="flex gap-fluid items-center justify-center mb-fluid">
           <a href="https://github.com/PierreMrt" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-lime-500 transition-colors" aria-label="GitHub">
             <Github className="w-5 h-5" />
           </a>
@@ -118,38 +118,38 @@ export default function ProfileCard() {
           </a>
         </div>
 
-        <div className="border-t border-gray-300 dark:border-gray-600 mb-6"></div>
+        <div className="border-t border-gray-300 dark:border-gray-600 mb-fluid"></div>
 
-        <div className="space-y-3">
+        <div className="space-y-2">
           <button
             onClick={() => setLocale('fr')}
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"
           >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🇫🇷</span>
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.french')}</span>
+            <div className="flex items-center gap-2">
+              <span className="text-fluid-lg">🇫🇷</span>
+              <span className="text-fluid-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.french')}</span>
             </div>
-            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.native')}</span>
+            <span className="text-fluid-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.native')}</span>
           </button>
           <button
             onClick={() => setLocale('en')}
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"
           >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🇬🇧</span>
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.english')}</span>
+            <div className="flex items-center gap-2">
+              <span className="text-fluid-lg">🇬🇧</span>
+              <span className="text-fluid-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.english')}</span>
             </div>
-            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
+            <span className="text-fluid-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
           </button>
           <button
             onClick={() => setLocale('it')}
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"
           >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🇮🇹</span>
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.italian')}</span>
+            <div className="flex items-center gap-2">
+              <span className="text-fluid-lg">🇮🇹</span>
+              <span className="text-fluid-sm font-medium text-gray-700 dark:text-gray-300">{t('profile.languages.italian')}</span>
             </div>
-            <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
+            <span className="text-fluid-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-[#222832] px-2 py-1 rounded">{t('profile.languages.levels.fluent')}</span>
           </button>
         </div>
       </div>
