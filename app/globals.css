@@ -293,6 +293,22 @@
   }
 }
 
+/* Minimum sizes for desktop only (above 1024px) */
+@media (min-width: 1025px) {
+  .portfolio-container {
+    min-width: 900px;
+    min-height: 600px;
+  }
+}
+
+/* Smaller minimums for tablet (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-container {
+    min-width: 700px;
+    min-height: 500px;
+  }
+}
+
 @layer utilities {
   .icon-fluid {
     width: clamp(1rem, 2vh, 2rem);
