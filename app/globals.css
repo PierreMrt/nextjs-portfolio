@@ -336,10 +336,13 @@
     margin-bottom: clamp(0.5rem, 1.5vh, 1.5rem);
   }
   .w-fluid-profile {
-    width: clamp(4rem, 10vh, 8rem);
-    height: clamp(4rem, 10vh, 8rem);
+    width: clamp(12rem, 16vh, 16rem);
+    height: clamp(12rem, 16vh, 16rem);
   }
   .gap-lang-fluid {
     gap: clamp(0.1rem, 0.5vh, 0.75rem);
+  }
+  .profile-clip-curve {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   }
 }
