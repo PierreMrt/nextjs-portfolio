@@ -84,6 +84,7 @@
   border-radius: 5px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   height: auto;
+  width: fit-content;
   margin-top: 20px;
   margin-right: -10px;
   position: relative; 
@@ -293,8 +294,8 @@
 
 @layer utilities {
   .icon-fluid {
-    width: clamp(1.25rem, 2vh, 2rem);
-    height: clamp(1.25rem, 2vh, 2rem);
+    width: clamp(1rem, 2vh, 2rem);
+    height: clamp(1rem, 2vh, 2rem);
   }
   .gap-fluid {
     gap: clamp(0.2rem, 1.5vh, 1.5rem);
@@ -320,5 +321,8 @@
   .w-fluid-profile {
     width: clamp(4rem, 10vh, 8rem);
     height: clamp(4rem, 10vh, 8rem);
+  }
+  .gap-lang-fluid {
+    gap: clamp(0.1rem, 0.5vh, 0.75rem);
   }
 }

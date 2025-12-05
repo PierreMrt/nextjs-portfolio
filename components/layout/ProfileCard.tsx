@@ -120,7 +120,7 @@ export default function ProfileCard() {
 
         <div className="border-t border-gray-300 dark:border-gray-600 mb-fluid"></div>
 
-        <div className="space-y-2">
+        <div className="flex flex-col gap-lang-fluid">
           <button
             onClick={() => setLocale('fr')}
             className="w-full flex items-center justify-between hover:bg-gray-100 dark:hover:bg-[#222832] p-2 rounded transition-colors"

@@ -22,7 +22,7 @@ export default function Sidebar({ activeSection, onSectionChange }: SidebarProps
   ]
 
   return (
-    <div className="w-20 flex flex-col items-center py-4 gap-fluid md:w-20 md:flex-col max-md:w-full max-md:flex-row max-md:py-3 max-md:px-4 max-md:gap-2 max-md:justify-around max-md:flex-shrink-0">
+    <div className="flex flex-col items-center py-4 gap-fluid md:px-3 md:flex-col max-md:w-full max-md:flex-row max-md:py-3 max-md:px-4 max-md:gap-2 max-md:justify-around max-md:flex-shrink-0">
       {sections.map(({ id, icon: Icon, label }) => (
         <button
           key={id}
