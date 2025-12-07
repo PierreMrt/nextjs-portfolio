@@ -2,7 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['www.pierre-merlet.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.pierre-merlet.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+    qualities: [100, 75],
   },
 }
 
