@@ -32,25 +32,27 @@ export const metadata: Metadata = {
 
 export async function generateStaticParams() {
   return [
-    { locale: 'en' },
-    { locale: 'fr' },
-    { locale: 'it' },
+    { locale: 'en' as const },
+    { locale: 'fr' as const },
+    { locale: 'it' as const },
   ]
+}
+
+type LocaleLayoutProps = {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
 }
 
 export default async function LocaleLayout({
   children,
   params,
-}: {
-  children: React.ReactNode
-  params: Promise<{ locale: 'en' | 'fr' | 'it' }>
-}) {
+}: LocaleLayoutProps) {
   const { locale } = await params
   
   return (
     <html lang={locale} className="scroll-smooth">
       <body className={`${poppinsThin.variable} ${poppinsLight.variable} font-light`}>
-        <Providers locale={locale}>
+        <Providers locale={locale as 'en' | 'fr' | 'it'}>
           {children}
         </Providers>
       </body>

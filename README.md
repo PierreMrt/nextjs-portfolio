@@ -1,6 +1,6 @@
 # Next.js Data Scientist Portfolio
 
-A modern, multilingual portfolio website built with Next.js 14, featuring dark mode support and internationalization (i18n) for English, French, and Italian.
+A modern, multilingual portfolio website built with Next.js 16, featuring dark mode support and internationalization (i18n) for English, French, and Italian.
 
 ## 🌟 Features
 
@@ -30,7 +30,7 @@ A modern, multilingual portfolio website built with Next.js 14, featuring dark m
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Fonts**: Google Fonts (Poppins)
@@ -95,7 +95,7 @@ nextjs-portfolio/
 
 ### Prerequisites
 
-- Node.js 14+ 
+- Node.js 16+ 
 - npm or yarn
 
 ### Installation
