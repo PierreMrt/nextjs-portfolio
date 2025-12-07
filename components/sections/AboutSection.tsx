@@ -1,11 +1,19 @@
 'use client'
 
 import { useTranslation } from '@/hooks/useTranslation'
+import skillsEn from '@/data/en/skills.json'
+import skillsFr from '@/data/fr/skills.json'
+import skillsIt from '@/data/it/skills.json'
+
+const skillsMap = {
+  en: skillsEn,
+  fr: skillsFr,
+  it: skillsIt,
+} as const
 
 export default function AboutSection() {
   const { t, locale } = useTranslation()
-  const skillsData = require(`@/data/${locale}/skills.json`)
-  const skills = skillsData
+  const skills = skillsMap[locale as keyof typeof skillsMap]
 
   return (
     <div className="space-y-8">
